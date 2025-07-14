@@ -1,966 +1,206 @@
 <!DOCTYPE html>
 <html lang="it">
-
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>webnicoladesign</title>
-    <meta name="robots" content="noindex, follow">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
-    <!-- CSS ================================== -->
-    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/vendor/slick.css">
-    <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
-    <link rel="stylesheet" href="assets/css/vendor/aos.css">
-    <link rel="stylesheet" href="assets/css/plugins/feature.css">
-    <!-- Style css -->
-    <link rel="stylesheet" href="assets/css/style.css">
-<!-- EmailJS -->
-<script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-(function(){
-emailjs.init({
-publicKey: "wjNhjw3fZZ_2CYTYb",
-});
-})();
-</script>
-<script src="assets/js/script.js"></script>
-
-
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Pomelia</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 <body>
-
-    <!-- Start Header -->
-    <header class="rn-header haeder-default black-logo-version header--fixed header--sticky">
-        <div class="header-wrapper rn-popup-mobile-menu m--0 row align-items-center">
-            <!-- Start Header Left -->
-            <div class="col-lg-2 col-6">
-                <div class="header-left">
-                    <div class="logo">
-                        <a href="#home">
-                            <img src="assets/images/logo/WebNicolaDesignW.png" alt="logo">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- End Header Left -->
-            <!-- Start Header Center -->
-            <div class="col-lg-10 col-6">
-                <div class="header-center">
-                    <nav id="sideNav" class="mainmenu-nav navbar-example2 d-none d-xl-block">
-                        <!-- Start Mainmanu Nav -->
-                        <ul class="primary-menu nav nav-pills">
-                            <li class="nav-item"><a class="nav-link smoth-animation active" href="#home">Home</a></li>
-                            <li class="nav-item"><a class="nav-link smoth-animation" href="#chisono">Chi sono</a></li>
-                            <li class="nav-item"><a class="nav-link smoth-animation" href="#features">Servizi</a></li>
-                            <li class="nav-item"><a class="nav-link smoth-animation" href="#portfolio">Portfolio</a></li>
-                            <li class="nav-item"><a class="nav-link smoth-animation" href="#contacts">Contatti</a></li>
-                        </ul>
-                        <!-- End Mainmanu Nav -->
-                    </nav>
-                    <!-- Start Header Right  -->
-                    <div class="header-right">
-                        <div class="hamberger-menu d-block d-xl-none">
-                            <i id="menuBtn" class="feather-menu humberger-menu"></i>
-                        </div>
-                        <div class="close-menu d-block">
-                            <span class="closeTrigger">
-                            <i data-feather="x"></i>
-                        </span>
-                        </div>
-                    </div>
-                    <!-- End Header Right  -->
-
-                </div>
-            </div>
-            <!-- End Header Center -->
-        </div>
-    </header>
-    <!-- End Header Area -->
-    <!-- Start Popup Mobile Menu  -->
-    <div class="popup-mobile-menu">
-        <div class="inner">
-            <div class="menu-top">
-                <div class="menu-header">
-                    <a class="logo" href="#home">
-                        <img src="assets/images/logo/WebNicolaDesignW.png" style="width: 250px;" alt="Personal Portfolio">
-                    </a>
-                </div>
-            </div>
-            <div class="content">
-                <ul class="primary-menu nav nav-pills">
-                    <li class="nav-item"><a class="nav-link smoth-animation active" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link smoth-animation" href="#chisono">Chi sono</a></li>
-                    <li class="nav-item"><a class="nav-link smoth-animation" href="#features">Servizi</a></li>
-                    <li class="nav-item"><a class="nav-link smoth-animation" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link smoth-animation" href="#contacts">Contatti</a></li>
-                </ul>
-                <!-- social mobile -->
-                <div class="social-share-style-1 mt--40">
-                    <span class="title">I miei Social</span>
-                    <ul class="social-share d-flex liststyle">
-                        <li class="facebook"><a href="https://www.facebook.com/Webnicoladesign/?locale=it_IT" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook">
-                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                                </svg></a>
-                        </li>
-                        <li class="instagram"><a href="https://www.instagram.com/webnicoladesign/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
-                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                                </svg></a>
-                        </li>
-                        <li class="linkedin"><a href="https://www.linkedin.com/in/nicola-berardi-285a68284/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
-                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                                    <rect x="2" y="9" width="4" height="12"></rect>
-                                    <circle cx="4" cy="4" r="2"></circle>
-                                </svg></a>
-                        </li>
-                        <li class="github"><a href="https://github.com/NicolaWebDevelop" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#ffffff" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
-                        </svg></a>
-                </li>
-                    </ul>
-                </div>
-                <!-- end social menu -->
-            </div>
-        </div>
-    </div>
-    <!-- End Popup Mobile Menu  -->
-    <main class="main-page-wrapper">
-        <!-- Start Slider Area -->
-        <div id="home" class="sfondohome">
-            <div class="slide slider-style-1">
-                <div class="container">
-                    <div class="row row--30 align-items-center">
-                        <div class="order-2 order-lg-1 col-lg-7 mt_md--50 mt_sm--50 mt_lg--30">
-                            <div class="content">
-                                <div class="inner">
-                                    <span class="subtitle">Hello, I'm</span>
-                                    <h1 class="title"><span>Nicola Berardi</span><br>
-                                        <span class="header-caption" id="page-top">
-                                            <!-- type headline start-->
-                                            <span class="cd-headline clip is-full-width">
-                                                <span>Front-End Developer.</span>
-                                        </span>
-                                        <span class="subtitle">Based in La Spezia.</span>
-                                        <!-- type headline end -->
-                                        </span>
-                                    </h1>
-                                    <div>
-                                        <p class="description">Scrivo codice per far sembrare le cose semplici 
-                                            (spoiler: non lo sono). Il mio lavoro? 
-                                            Prendere un design pixel-perfect e trasformarlo in una pagina web 
-                                            che non esploda su Internet Explorer. 
-                                            Ogni tanto mi sento più psicologo del codice che programmatore: 
-                                            se il bottone non si comporta come dovrebbe, lo capisco. 
-                                            Lo ascolto. Lo sistemo.
-                                            Uso HTML, CSS, JavaScript e a volte litigo con React 
-                                            (ma poi facciamo pace). Se qualcosa è responsive, 
-                                            fluido e funziona anche su uno schermo grande quanto un 
-                                            francobollo… probabilmente ci ho messo le mani.</p>              
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-6 col-xl-6 col-md-6 col-sm-6 col-12">
-                                        <div class="social-share-inner-left">
-                                            <span class="title">I miei social</span>
-                                            <ul class="social-share d-flex liststyle">
-                                                <li class="facebook"><a href="https://www.facebook.com/Webnicoladesign/?locale=it_IT" target="_blank"><i data-feather="facebook"></i></a>
-                                                </li>
-                                                <li class="instagram"><a href="https://www.instagram.com/webnicoladesign/" target="_blank"><i data-feather="instagram"></i></a>
-                                                </li>
-                                                <li class="linkedin"><a href="https://www.linkedin.com/in/nicola-berardi-285a68284/" target="_blank"><i data-feather="linkedin"></i></a>
-                                                </li>
-                                                <li class="github"><a href="https://github.com/NicolaWebDevelop" target="_blank"><i data-feather="github"></i></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="col-lg-6 col-xl-6 col-md-6 col-sm-6 col-12 mt_mobile--30">
-                                        <div class="skill-share-inner">
-                                            <span class="title">Le mie (s)KILL ME</span>
-                                            <ul class="skill-share d-flex liststyle">
-                                                <li><svg xmlns="http://www.w3.org/2000/svg" height="32" width="24" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#ffffff" d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"/></svg></li>
-                                                <li><svg xmlns="http://www.w3.org/2000/svg" height="32" width="32" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#ffffff" d="M480 32l-64 368-223.3 80L0 400l19.6-94.8h82l-8 40.6L210 390.2l134.1-44.4 18.8-97.1H29.5l16-82h333.7l10.5-52.7H56.3l16.3-82H480z"/></svg></li>
-                                                <li><svg xmlns="http://www.w3.org/2000/svg" height="32" width="24" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#ffffff" d="M14 95.8C14 42.9 56.9 0 109.8 0H274.2C327.1 0 370 42.9 370 95.8C370 129.3 352.8 158.8 326.7 175.9C352.8 193 370 222.5 370 256C370 308.9 327.1 351.8 274.2 351.8H272.1C247.3 351.8 224.7 342.4 207.7 326.9V415.2C207.7 468.8 163.7 512 110.3 512C57.5 512 14 469.2 14 416.2C14 382.7 31.2 353.2 57.2 336.1C31.2 319 14 289.5 14 256C14 222.5 31.2 193 57.2 175.9C31.2 158.8 14 129.3 14 95.8zM176.3 191.6H109.8C74.2 191.6 45.4 220.4 45.4 256C45.4 291.4 74 320.2 109.4 320.4C109.5 320.4 109.7 320.4 109.8 320.4H176.3V191.6zM207.7 256C207.7 291.6 236.5 320.4 272.1 320.4H274.2C309.7 320.4 338.6 291.6 338.6 256C338.6 220.4 309.7 191.6 274.2 191.6H272.1C236.5 191.6 207.7 220.4 207.7 256zM109.8 351.8C109.7 351.8 109.5 351.8 109.4 351.8C74 352 45.4 380.8 45.4 416.2C45.4 451.7 74.6 480.6 110.3 480.6C146.6 480.6 176.3 451.2 176.3 415.2V351.8H109.8zM109.8 31.4C74.2 31.4 45.4 60.2 45.4 95.8C45.4 131.4 74.2 160.2 109.8 160.2H176.3V31.4H109.8zM207.7 160.2H274.2C309.7 160.2 338.6 131.4 338.6 95.8C338.6 60.2 309.7 31.4 274.2 31.4H207.7V160.2z"/></svg></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="order-1 order-lg-2 col-lg-5">
-                            <div class="thumbnail">
-                                <div class="inner">
-                                    <img src="assets/images/slider/Nicola.png" alt="Personal Portfolio Images">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Slider Area -->
-
-<!-- sezione CHI SONO -->
-<div class="chisono rn-section-gap section-separator" id="chisono">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="section-title text-center">
-                    <h2 class="titlechisono">CHI SONO</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row mt--45">
-            <div class="col-lg-12">
-                <ul class="rn-nav-list nav nav-tabs" id="myTabs" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="education-tab" data-toggle="tab" href="#education" role="tab" aria-controls="education" aria-selected="true">Mi Presento</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="professional-tab" data-toggle="tab" href="#professional" role="tab" aria-controls="professional" aria-selected="false">Le mie skill</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="experience-tab" data-toggle="tab" href="#experience" role="tab" aria-controls="experience" aria-selected="false">Curriculum</a>
-                    </li>
-                
-                </ul>
-                <!-- Start Tab Content Wrapper  -->
-                <div class="rn-nav-content tab-content" id="myTabContents">
-                    <!-- Start Single Tab  -->
-                    <div class="tab-pane show active fade single-tab-area" id="education" role="tabpanel" aria-labelledby="education-tab">
-                        <div class="row row--30 align-items-center">
-                            <div class="order-2 order-lg-1 col-lg-7 mt_md--50 mt_sm--50 mt_lg--30">
-                                <div class="content">
-                                    <div class="inner">
-                                        <h1 class="title">Nicola Berardi</h1>
-                                        <div>
-                                            <p class="description">Ho preso l’attestato da Web Designer pieno di entusiasmo e (quasi) 
-                                                nessuna skill vera. Ho provato subito a lanciarmi nel mondo del freelance… e 
-                                                ho scoperto in fretta che 
-                                                la passione non basta quando non sai ancora come si posiziona un div.
-                                                Ma niente panico:
-                                                 ho imparato la lezione e, invece di mollare, mi sono rimesso a 
-                                                 studiare come si deve. Oggi sono un Front-end Developer con il codice 
-                                                 nel cuore e la console del browser sempre aperta.
-                                                Cerco un’azienda dove crescere, imparare ogni giorno 
-                                                qualcosa di nuovo, e magari scrivere codice che funziona 
-                                                al primo tentativo (ci credo ancora).
-                                                <br>il mio motto è:
-                                                 " Sono pronto a creare l'increabile! "</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="order-1 order-lg-2 col-lg-5">
-                                <div class="thumbnail">
-                                    <div class="inner">
-                                        <img src="assets/images/slider/Nicola.png" alt="Personal Portfolio Images">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Tab  -->
-
-                    <!-- Start Single Tab  -->
-                    <div class="tab-pane fade " id="professional" role="tabpanel" aria-labelledby="professional-tab">
-                        <div class="personal-experience-inner mt--40">
-                            <div class="row row--40">
-
-                                <!-- Start Single Progressbar  -->
-                                <div class="col-lg-6 col-md-6 col-12">
-                                    <div class="progress-wrapper">
-                                        <div class="content">
-                                            <h4 class="maintitle">Design Skill</h4>
-                                            <!-- Start Single Progress Charts -->
-                                            <div class="progress-charts">
-                                                <h6 class="heading heading-h6">PHOTOSHOP</h6>
-                                                <div class="progress">
-                                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style="width: 70%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span class="percent-label">70%</span></div>
-                                                </div>
-                                            </div>
-                                            <!-- End Single Progress Charts -->
-
-                                            <!-- Start Single Progress Charts -->
-                                            <div class="progress-charts">
-                                                <h6 class="heading heading-h6">FIGMA</h6>
-                                                <div class="progress">
-                                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay=".4s" role="progressbar" style="width: 95%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span class="percent-label">80%</span></div>
-                                                </div>
-                                            </div>
-                                            <!-- End Single Progress Charts -->
-
-                                            <!-- Start Single Progress Charts -->
-                                            <div class="progress-charts">
-                                                <h6 class="heading heading-h6">ADOBE XD</h6>
-                                                <div class="progress">
-                                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay=".5s" role="progressbar" style="width: 60%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span class="percent-label">60%</span></div>
-                                                </div>
-                                            </div>
-                                            <!-- End Single Progress Charts -->
-
-                                            <!-- Start Single Progress Charts -->
-                                            <div class="progress-charts">
-                                                <h6 class="heading heading-h6">ADOBE ILLUSTRATOR</h6>
-                                                <div class="progress">
-                                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay=".6s" role="progressbar" style="width: 70%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span class="percent-label">70%</span></div>
-                                                </div>
-                                            </div>
-                                            <!-- End Single Progress Charts -->
-
-                                            <!-- Start Single Progress Charts -->
-                                            <div class="progress-charts">
-                                                <h6 class="heading heading-h6">DESIGN</h6>
-                                                <div class="progress">
-                                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.9s" data-wow-delay=".7s" role="progressbar" style="width: 90%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span class="percent-label">90%</span></div>
-                                                </div>
-                                            </div>
-                                            <!-- End Single Progress Charts -->
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Progressbar  -->
-
-                                <!-- Start Single Progressbar  -->
-                                <div class="col-lg-6 col-md-6 col-12 mt_sm--60">
-                                    <div class="progress-wrapper">
-                                        <div class="content">
-                                            <h4 class="maintitle">Development Skill</h4>
-                                            <!-- Start Single Progress Charts -->
-                                            <div class="progress-charts">
-                                                <h6 class="heading heading-h6">HTML</h6>
-                                                <div class="progress">
-                                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span class="percent-label">85%</span></div>
-                                                </div>
-                                            </div>
-                                            <!-- End Single Progress Charts -->
-
-                                            <!-- Start Single Progress Charts -->
-                                            <div class="progress-charts">
-                                                <h6 class="heading heading-h6">CSS</h6>
-                                                <div class="progress">
-                                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay=".4s" role="progressbar" style="width: 80%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span class="percent-label">80%</span></div>
-                                                </div>
-                                            </div>
-                                            <!-- End Single Progress Charts -->
-
-                                            <!-- Start Single Progress Charts -->
-                                            <div class="progress-charts">
-                                                <h6 class="heading heading-h6">JAVASCRIPT</h6>
-                                                <div class="progress">
-                                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay=".5s" role="progressbar" style="width: 70%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span class="percent-label">70%</span></div>
-                                                </div>
-                                            </div>
-                                            <!-- End Single Progress Charts -->
-
-                                            <!-- Start Single Progress Charts -->
-                                            <div class="progress-charts">
-                                                <h6 class="heading heading-h6">JQuery</h6>
-                                                <div class="progress">
-                                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay=".6s" role="progressbar" style="width: 75%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span class="percent-label">75%</span></div>
-                                                </div>
-                                            </div>
-                                            <!-- End Single Progress Charts -->
-
-                                            <!-- Start Single Progress Charts -->
-                                            <div class="progress-charts">
-                                                <h6 class="heading heading-h6">PLUGIN</h6>
-                                                <div class="progress">
-                                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.9s" data-wow-delay=".7s" role="progressbar" style="width: 70%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span class="percent-label">70%</span></div>
-                                                </div>
-                                            </div>
-                                            <!-- End Single Progress Charts -->
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Progressbar  -->
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Tab  -->
-
-                    <!-- Start Single Tab  -->
-                    <div class="tab-pane fade" id="experience" role="tabpanel" aria-labelledby="experience-tab">
-                        <div class="personal-experience-inner mt--40">
-                            <div class="row">
-                                <!-- Start Skill List Area  -->
-                                <div class="col-lg-6 col-md-12 col-12">
-                                    <div class="content">
-                                        <span class="subtitle">1994 - 2025</span>
-                                        <h4 class="maintitle">Formazione</h4>
-                                        <div class="experience-list">
-<!-- Start2  -->
-<div class="resume-single-list">
-    <div class="inner">
-        <div class="heading">
-            <div class="title">
-                <h4>Start2Impact</h4>
-                <span>Front-End Developer</span>
-            </div>
-            <div class="date-of-time">
-                <span>(2024 - 2025)</span>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- / Start2  -->
- <!-- Biennale  -->
-<div class="resume-single-list">
-    <div class="inner">
-        <div class="heading">
-            <div class="title">
-                <h4>Accademia</h4>
-                <span>Web Design & Communication</span>
-            </div>
-            <div class="date-of-time">
-                <span>(2015 - 2017)</span>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- / Biennale  -->
-<!-- Superiori  -->
-<div class="resume-single-list">
-    <div class="inner">
-        <div class="heading">
-            <div class="title">
-                <h4>Superiori L. EINAUDI - D. CHIODO</h4>
-                <span>Operatore Grafico - Pubblicitario</span>
-            </div>
-            <div class="date-of-time">
-                <span>(2010 - 2015)</span>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- / Superiori  -->
-     <!-- Medie -->
-     <div class="resume-single-list">
-        <div class="inner">
-            <div class="heading">
-                <div class="title">
-                    <h4>Medie</h4>
-                    <span>Il peggior incubo per tutti</span>
-                </div>
-                <div class="date-of-time">
-                    <span>(2005 - 2009)</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- / Medie  -->
-      <!-- Elementari  -->
-      <div class="resume-single-list">
-        <div class="inner">
-            <div class="heading">
-                <div class="title">
-                    <h4>Elementari</h4>
-                    <span>Scrivere e parlare</span>
-                </div>
-                <div class="date-of-time">
-                    <span>(2000 - 2005)</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- / Elementari  -->
-                                            <!-- asilo  -->
-                                            <div class="resume-single-list">
-                                                <div class="inner">
-                                                    <div class="heading">
-                                                        <div class="title">
-                                                            <h4>Asilo</h4>
-                                                            <span>Balbettare e scarabocchiare</span>
-                                                        </div>
-                                                        <div class="date-of-time">
-                                                            <span>(1997 - 1999)</span>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                            <!-- / asilo  -->
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Skill List Area  -->
-
-                                <!-- Start Skill List Area 2nd  -->
-                                <div class="col-lg-6 col-md-12 col-12 mt_md--60 mt_sm--60">
-                                    <div class="content">
-                                        <span class="subtitle">2016 - 2025</span>
-                                        <h4 class="maintitle">Esperienze lavorative</h4>
-                                        <div class="experience-list">
-                                             <!-- Start Freelance  -->
-                                            <div class="resume-single-list">
-                                                <div class="inner">
-                                                    <div class="heading">
-                                                        <div class="title">
-                                                            <h4>Web Designer</h4>
-                                                            <span>Freelance</span>
-                                                        </div>
-                                                        <div class="date-of-time">
-                                                            <span>2017 - ∞</span>
-                                                        </div>
-                                                    </div>
-                                                    <p class="description">Preso l'attestato di Web Designer ho provato a mettermi in gioco fin da subito, 
-                                                        con pochissima esperienza e poche skils.
-                                                         Non ho mollato, ho ripreso in mano gli studi e sono diventato un Front-end Developer.
-                                                        Cerco un azienda con cui poter crescere e imparare sempre cose nuove.</p>
-                                                </div>
-                                            </div>
-                                            <!-- End Freelance  -->
-   <!-- Start Agenzia Myfastway  -->
-   <div class="resume-single-list">
-    <div class="inner">
-        <div class="heading">
-            <div class="title">
-                <h4>Web Master</h4>
-                <span>Agenzia Myfastway</span>
-            </div>
-            <div class="date-of-time">
-                <span>16/03-16/09/2016</span>
-            </div>
-        </div>
-        <p class="description">Garanzia Giovani all'interno dell'agenzia di accoglienza turistica MyFastway.
-             Gestione del sito web, inserimento annunci dei clienti, preparare ricevute e fatture.</p>
-    </div>
-</div>
-<!-- End Agenzia MyFastWay  -->
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Skill List Area  -->
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Tab  -->
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Skill List Area  -->
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Tab  -->
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- End Resume Area -->
-
-        <!-- sezione SERVIZI-->
-        <div class="rn-service-area rn-section-gap section-separator" id="features">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title text-left" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true">
-                            <h2 class="titleservizi">SERVIZI</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row row--25 mt_md--10 mt_sm--10">
-
-                    <!-- Start Servizi Front End Developer -->
-                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
-                        <div class="rn-service">
-                            <div class="inner">
-                                <div class="icon">
-                                    <h6 class="allineato">Front-End Development</h6>
-                                    <i data-feather="layout"></i>
-                                </div>
-                                <div class="content">
-                                    <p class="description">Scrivo codice che prende vita sullo schermo: 
-                                        HTML, CSS e JavaScript sono i miei superpoteri quotidiani. 
-                                        Amo trasformare idee e mockup in interfacce fluide, responsive e belle 
-                                        da usare (e da vedere!). Se un bottone è al posto giusto e funziona al 
-                                        primo clic... probabilmente c’è il mio zampino.
-                                        Mi diverto a dare forma al web con un occhio al design e l’altro al codice. 
-                                        Browser in modalità “ispeziona” 
-                                        sempre aperta, perché il dettaglio fa la differenza!.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Servizi Front End Developer -->
-                    <!-- Start Servizi UI UX Design -->
-                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
-                        <div class="rn-service">
-                            <div class="inner">
-                                <div class="icon">
-                                    <h6 class="allineato">UI UX Design</h6>
-                                    <i data-feather="grid"></i>
-                                </div>
-                                <div class="content">
-                                    <p class="description"> Progetto interfacce che non solo piacciono agli occhi, ma soprattutto funzionano alla grande. 
-                                        Per me il design non è solo una questione di pixel ben allineati, ma un modo per rendere la vita dell’utente più semplice.
-                                        Creo layout che raccontano una storia: quella dell’utente che finalmente trova quello 
-                                        che cerca senza stressare il mouse (o il dito!).</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Servizi UI UX design -->
-                    <!-- Start Servizi Logo -->
-                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
-                        <div class="rn-service">
-                            <div class="inner">
-                                <div class="icon">
-                                    <h6 class="allineato">Logo & Icon Design</h6>
-                                    <i data-feather="aperture"></i>
-                                </div>
-                                <div class="content">
-                                    <p class="description">Disegno loghi che parlano anche quando stanno zitti. 
-                                        Un logo non è solo un disegnino carino: 
-                                        è la prima stretta di mano, il colpo d’occhio, l’anima visiva di un brand. 
-                                        E io adoro dargli forma, carattere e personalità 
-                                        (senza esagerare con i font pazzi, promesso).
-                                        Ogni progetto parte da un’idea, passa per mille schizzi, qualche caffè, e 
-                                        arriva a un simbolo che funziona ovunque: sul biglietto da visita, 
-                                        sulla tazza del caffè e persino sulla favicon.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Servizi Logo -->
-                </div>
-            </div>
-        </div>
-        <!-- End Service Area  -->
-        </div>
-        <!-- Start Portfolio Area -->
-        <div class="port rn-section-gap section-separator" id="portfolio">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title text-center">
-                            <h2 class="titleport">PORTFOLIO</h2>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row row--25 mt--10 mt_md--10 mt_sm--10">
-                    <!-- Start Single Portfolio -->
-                    <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
-                        <div class="rn-portfolio" data-toggle="modal" data-target="#exampleModalCenterr">
-                            <div class="inner">
-                                <div class="thumbnail" style="overflow: auto; height: 200px; cursor: pointer;">
-                                        <img src="assets/images/portfolio/Grafica/GraphicDesign.png"  style="height:156px;" alt="Personal Portfolio Images">
-                                    </a>
-                                </div>
-                                <div class="content">
-                                    <div class="category-info">
-                                    </div>
-                                    <div class="title"><a style="cursor: pointer;">GRAFICA<i class="feather-arrow-up-right"></i></a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Portfolio -->
-                                        <!-- Start Single Portfolio -->
-                                        <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
-                                            <div class="rn-portfolio" data-toggle="modal" data-target="#ee">
-                                                <div class="inner">
-                                                    <div class="thumbnail" style="overflow: auto; height: 200px;">
-                                                            <img src="assets/images/portfolio/SitiWeb/computer-4795762_1280.jpg"  style="height:156px; cursor: pointer;" alt="Personal Portfolio Images">
-                                                    </div>
-                                                    <div class="content">
-                                                        <div class="category-info">
-                                                        </div>
-                                                        <h4 class="title"><a style="cursor: pointer;">SITI WEB<i class="feather-arrow-up-right"></i></a></h4>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Single Portfolio -->
-
-                    <!-- Start Single Portfolio -->
-                    <div data-aos="fade-up" data-aos-delay="300" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
-                        <div class="rn-portfolio" data-toggle="modal" data-target="#exampleModalCente">
-                            <div class="inner">
-                                <div class="thumbnail" style="overflow: auto; height: 200px;">
-                                        <img src="assets/images/portfolio/loghi/Logo.png"  style="height:156px; cursor: pointer;"  alt="Personal Portfolio Images">
-                                </div>
-                                <div class="content">
-                                    <h4 class="title"><a style="cursor:pointer;">LOGHI<i class="feather-arrow-up-right"></i></a></h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                    <!-- End Single Portfolio -->
-            </div>
-        </div>
-        <!-- End portfolio Area -->
-
-   <!-- Modal Portfolio Body area Start -->
-   <div class="modal fade" id="exampleModalCenterr" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true"><i data-feather="x"></i></span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-
-                    <div class="col-lg-6">
-                        <div class="portfolio-popup-thumbnail">
-                            <div class="card-container">
-                                    <img class="w-100" src="assets/images/portfolio/Grafica/Dimpo.png" alt="Slide">
-                                   <img class="w-50" src="assets/images/portfolio/Grafica/Copia di Squali felpa.png" alt="slide">
-                                   <img class="w-50" src="assets/images/portfolio/Grafica/Attenti al cane (30 × 20 cm) (4).png" alt="slide">
-                               </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="text-content">
-                            <h3>
-                        GRAFICA
-                            </h3>
-                        </div>
-                        <!-- End of .text-content -->
-                    </div>
-                </div>
-                <!-- End of .row Body-->
-            </div>
-        </div>
-    </div>
-</div>
-<!-- End Modal Portfolio area -->
+      <div class="section">
+        <header>
+          <div class="logo">
+            <a href="#"><img src="img/LogoHotelPomelia.svg" width="150px" alt="logo Hotel Pomelia"></a>
+          </div>
         
-        <!-- Portfolio sitiweb -->
-   <div class="modal fade" id="ee" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true"><i data-feather="x"></i></span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="col-lg-12">
-                <div class="text-content" style="text-align: center;">
-                    <h3>
-                       SITI WEB
-                    </h3>
-                </div>
-            </div>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="portfolio-popup-thumbnail">
-                            <a href="https://www.croceverdearcola.org/" target="_blank" rel="noopener noreferrer">
-                                <img src="assets/images/portfolio/SitiWeb/LogoCroceverdearcola.png" alt="Vai al sito" width="500">
-                              </a>
-                              <a href="https://www.trinova/" target="_blank" rel="noopener noreferrer">
-                                <img src="assets/images/portfolio/SitiWeb/Trinova.webp" alt="Vai al sito" width="500">
-                              </a>
-                            <a href="/assets/Portfolio/GreenEarth modifiche/index.html" target="_blank" rel="noopener noreferrer">
-                                <img src="assets/images/portfolio/SitiWeb/GreenEarth.png" alt="Vai al sito">
-                              </a>
-                              <a href="/assets/Portfolio/Hotel Pomelia/index.html" target="_blank" rel="noopener noreferrer">
-                                <img src="assets/images/portfolio/SitiWeb/Hotel Pomelia.png" alt="Vai al sito">
-                              </a>
-                        </div> 
-                    </div>
-                </div>
-            </div>
+          <nav>
+            <ul class="menu">
+              <li><a href="#chisiamo">Chi siamo</a></li>
+              <li><a href="#servizi">Servizi</a></li>
+             <!-- da aggiungere successivamente la sezione form prenota calendario
+              <li><a href="#">Prenota</a></li> 
+              --> 
+              <li><a href="#contatti">Contatti</a></li>
+            </ul>
+          </nav>
+        </header>
+        
+        <div class="fixed">
+        <h1 class="large">Pomelia<br />hotel</h1>
+        <p>Di lusso,<strong>ecosostenibile</strong></p>
+          </div>
+<!-- Bottone Scopri di piu -->
+<div class="fixedbuttom">
+<button>
+  <a href="#chisiamo">Scopri di più</a>
+  <div class="icon-1">
+    <svg
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 0 26.3 65.33"
+      style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+      version="1.1"
+      xml:space="preserve"
+      xmlns="http://www.w3.org/2000/svg">
+      <defs></defs>
+      <g id="Layer_x0020_1">
+        <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+        <path
+          d="M13.98 52.87c0.37,-0.8 0.6,-1.74 0.67,-2.74 1.01,1.1 2.23,2.68 1.24,3.87 -0.22,0.26 -0.41,0.61 -0.59,0.97 -2.95,5.89 3.44,10.87 2.98,0.78 0.29,0.23 0.73,0.82 1.03,1.18 0.33,0.4 0.7,0.77 1,1.15 0.29,0.64 -0.09,2.68 1.77,4.91 5.42,6.5 5.67,-2.38 0.47,-4.62 -0.41,-0.18 -0.95,-0.26 -1.28,-0.54 -0.5,-0.41 -1.23,-1.37 -1.66,-1.9 0.03,-0.43 -0.17,-0.13 0.11,-0.33 4.98,1.72 8.4,-1.04 2.38,-3.16 -1.98,-0.7 -2.9,-0.36 -4.72,0.16 -0.63,-0.58 -2.38,-3.82 -2.82,-4.76 1.21,0.56 1.72,1.17 3.47,1.3 6.5,0.5 2.31,-4.21 -2.07,-4.04 -1.12,0.04 -1.62,0.37 -2.49,0.62l-1.25 -3.11c0.03,-0.26 0.01,-0.18 0.1,-0.28 1.35,0.86 1.43,1 3.25,1.45 2.35,0.15 3.91,-0.15 1.75,-2.4 -1.22,-1.27 -2.43,-2.04 -4.22,-2.23l-2.08 0.13c-0.35,-0.58 -0.99,-2.59 -1.12,-3.3l-0.01 -0.01 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0c-0.24,-0.36 1.88,1.31 2.58,1.57 1.32,0.49 2.6,0.33 3.82,0 -0.37,-1.08 -1.17,-2.31 -2.13,-3.11 -1.79,-1.51 -3.07,-1.41 -5.22,-1.38l-0.93 -4.07c0.41,-0.57 1.41,0.9 2.82,1.36 0.96,0.31 1.94,0.41 3,0.14 2,-0.52 -2.25,-4.4 -4.53,-4.71 -0.7,-0.1 -1.23,-0.04 -1.92,-0.03 -0.46,-0.82 -0.68,-3.61 -0.92,-4.74 0.8,0.88 1.15,1.54 2.25,2.23 0.8,0.5 1.58,0.78 2.57,0.85 2.54,0.18 -0.1,-3.47 -0.87,-4.24 -1.05,-1.05 -2.34,-1.59 -4.32,-1.78l-0.33 -3.49c0.83,0.67 1.15,1.48 2.3,2.16 1.07,0.63 2.02,0.89 3.58,0.79 0.15,-1.34 -1.07,-3.39 -2.03,-4.3 -1.05,-0.99 -2.08,-1.47 -3.91,-1.68l-0.07 -3.27 0.32 -0.65c0.44,0.88 1.4,1.74 2.24,2.22 0.69,0.39 2.4,1.1 3.44,0.67 0.31,-1.92 -1.84,-4.49 -3.5,-5.29 -0.81,-0.39 -1.61,-0.41 -2.18,-0.68 -0.12,-1.28 0.27,-3.23 0.37,-4.55l-0.89 0c-0.06,1.28 -0.35,3.12 -0.34,4.31 -0.44,0.45 -0.37,0.42 -0.96,0.64 -3.88,1.49 -4.86,6.38 -3.65,7.34 1.42,-0.31 3.69,-2.14 4.16,-3.66 0.23,0.5 0.1,2.36 0.05,3.05 -1.23,0.4 -2.19,1.05 -2.92,1.82 -1.17,1.24 -2.36,4.04 -1.42,5.69 1.52,0.09 4.07,-2.49 4.49,-4.07l0.29 3.18c-2.81,0.96 -5.01,3.68 -4.18,7.43 2.06,-0.09 3.78,-2.56 4.66,-4.15 0.23,1.45 0.67,3.06 0.74,4.52 -1.26,0.93 -2.37,1.8 -2.97,3.55 -0.48,1.4 -0.49,3.72 0.19,4.55 0.59,0.71 2.06,-1.17 2.42,-1.67 1,-1.35 0.81,-1.92 1.29,-2.46l0.7 3.44c-0.49,0.45 -0.94,0.55 -1.5,1.19 -1.93,2.23 -2.14,4.33 -1.01,6.92 0.72,0.09 2.04,-1.4 2.49,-2.06 0.65,-0.95 0.79,-1.68 1.14,-2.88l0.97 2.92c-0.2,0.55 -1.84,1.32 -2.6,3.62 -0.54,1.62 -0.37,3.86 0.67,4.93 0.58,-0.09 1.85,-1.61 2.2,-2.19 0.66,-1.09 0.66,-1.64 1,-2.93l1.32 3.18c-0.23,0.72 -1.63,1.72 -1.82,4.18 -0.17,2.16 1.11,6.88 3.13,2.46zm-4.09 -16.89l-0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 -0 0.01 0.01z"
+          class="fil0"
+        ></path>
+      </g>
+    </svg>
+  </div>
+  <div class="icon-2">
+    <svg
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 0 11.67 37.63"
+      style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+      version="1.1"
+      xml:space="preserve"
+      xmlns="http://www.w3.org/2000/svg">
+      <defs></defs>
+      <g id="Layer_x0020_1">
+        <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+        <path
+          d="M7.63 35.26c-0.02,0.13 0.01,0.05 -0.06,0.14 -0,0 -0.08,0.07 -0.11,0.1 -0.42,0.25 -0.55,0.94 -0.23,1.4 0.68,0.95 2.66,0.91 3.75,0.21 0.2,-0.13 0.47,-0.3 0.57,-0.49 0.09,-0.02 0.04,0.03 0.11,-0.07l-1.35 -1.24c-0.78,-0.78 -1.25,-1.9 -2.07,-0.62 -0.11,0.18 -0.06,0.16 -0.22,0.26 -0.4,-0.72 -0.95,-1.79 -1.26,-2.59 0.82,0.02 1.57,-0.12 2.16,-0.45 0.49,-0.27 1.15,-0.89 1.33,-1.4 0.1,-0.06 0.02,0.01 0.06,-0.1 -0.24,-0.16 -0.87,-0.37 -1.19,-0.52 -0.4,-0.19 -0.73,-0.39 -1.09,-0.62 -0.25,-0.16 -0.85,-0.6 -1.18,-0.3 -0.35,0.32 -0.32,0.83 -0.53,1.17 -0.71,-0.3 -0.55,-0.26 -0.84,-1.22 -0.15,-0.5 -0.31,-1.12 -0.41,-1.66l0.03 -0.13c0.56,0.23 1.28,0.37 1.99,0.28 0.56,-0.07 1.33,-0.42 1.62,-0.71l0.1 -0.1c-0.74,-0.68 -1.09,-1.2 -1.65,-1.99 -1.09,-1.52 -1.2,-0.28 -1.92,0.17 -0.26,-0.79 -0.73,0.2 -0.12,-2.76 0.06,-0.3 0.19,-0.7 0.2,-0.98 0.18,0.08 0.01,-0.01 0.11,0.08 0.05,0.05 0.07,0.07 0.1,0.12 0.94,1.17 3.63,0.82 4.21,0.01 0.13,-0.02 0.06,0.03 0.1,-0.1 -1.14,-0.81 -1.91,-2.89 -2.58,-2.67 -0.29,0.09 -0.78,0.63 -0.93,0.87 -0.54,-0.48 -0.36,-0.63 -0.38,-0.81 0.01,-0.01 0.03,-0.04 0.03,-0.03 0.01,0.02 0.36,-0.35 0.45,-0.6 0.13,-0.35 0.04,-0.65 -0.05,-0.95 0.06,-0.41 0.33,-1.33 0.28,-1.71 0.22,-0.05 0.19,0.05 0.45,0.17 0.47,0.23 1.17,0.33 1.7,0.32 0.62,-0 1.74,-0.39 1.94,-0.75 0.14,-0.02 0.05,0.06 0.13,-0.09 -1.05,-1.1 -0.7,-0.64 -1.62,-1.92 -0.58,-0.81 -0.9,-1.27 -1.9,0.12 -0.44,-0.5 -0.64,-0.69 -0.66,-1.24 0.02,-0.31 0.15,-0.36 0.08,-0.73 -0.04,-0.24 -0.14,-0.41 -0.29,-0.59l-0.47 -2.54c0.09,-0.14 -0.09,-0.1 0.2,-0.05 0.06,0.01 0.19,0.05 0.3,0.07 0.54,0.09 1.47,0.01 1.95,-0.15 0.57,-0.19 1.53,-0.8 1.68,-1.18 0.16,-0.07 0.05,0.02 0.15,-0.13 -0.12,-0.15 -0.95,-0.65 -1.15,-0.8 -1.43,-1.08 -2.21,-2.77 -3.16,-0.38 -0.2,-0.1 -0.75,-0.55 -0.83,-0.74 -0.15,-0.35 -0.21,-0.81 -0.37,-1.15l-0.1 -0.25c-0.03,-0.3 -0.44,-1.33 -0.57,-1.64 -0.2,-0.51 -0.47,-1.09 -0.64,-1.6l-0.55 0c0.14,0.42 0.36,0.84 0.53,1.28 0.12,0.3 0.19,0.35 0.06,0.66l-0.21 0.52c-0.01,0.01 -0.01,0.02 -0.02,0.03 -0.06,0.1 -0.03,0.05 -0.06,0.09 -1.44,-1.03 -1.66,-0.73 -2.07,0.46 -0.16,0.46 -0.3,0.93 -0.5,1.36l-0.64 1.28c0.06,0.07 -0,0.03 0.1,0.03 0.05,0.05 0.02,0.03 0.1,0.08l0.49 0.14c0.23,0.05 0.44,0.09 0.66,0.1 0.55,0.04 0.94,-0.06 1.35,-0.19 0.54,-0.18 1.09,-0.44 1.5,-0.82 0.15,-0.14 0.24,-0.3 0.4,-0.41l0.46 1.66c0.03,0.74 -0.09,0.6 0.27,1.21 0.01,0.01 0.01,0.02 0.02,0.03 0.01,0.01 0.01,0.02 0.02,0.04l0.07 0.11c-0.02,0.22 0.19,1.01 0.24,1.29 0.09,0.46 -0.21,0.79 -0.3,1.2 -0.55,-0.23 -1.25,-1.06 -1.66,-0.23 -0.12,0.25 -0.17,0.36 -0.26,0.62 -0.33,1.01 -0.63,1.61 -1.06,2.43l0.12 0.04 0.23 0.11c0.06,0.02 0.17,0.04 0.25,0.06 0.17,0.04 0.34,0.08 0.52,0.09 0.29,0.02 0.93,0.07 1.12,-0.13 0.42,0.01 1.24,-0.49 1.51,-0.71 0.01,0.01 0.03,0 0.04,0.02l0.09 0.06c-0.04,0.29 0.02,0.41 0.03,0.7l-0.05 1.41c-0.06,1.12 -0.29,1.06 -0.76,1.69 -0.08,-0.07 -0.03,-0.01 -0.11,-0.11 -0.03,-0.03 -0.06,-0.08 -0.09,-0.11 -0.2,-0.25 -0.38,-0.54 -0.7,-0.69 -0.7,-0.32 -1.52,1.73 -2.82,2.61 0.04,0.2 -0.01,0.06 0.1,0.11 0.25,0.3 1,0.67 1.5,0.78 0.35,0.08 0.71,0.08 1.09,0.05 0.25,-0.02 0.82,-0.16 0.92,-0.13 -0.16,0.69 -0.35,1.35 -0.52,2.03 -0.25,1 -0.03,0.77 -0.98,1.53 -0.3,-0.31 -0.33,-0.77 -0.77,-1.02 -0.42,-0.25 -0.91,0.35 -1.12,0.55 -0.33,0.32 -0.58,0.6 -0.97,0.89 -0.19,0.14 -0.34,0.26 -0.53,0.4 -0.14,0.11 -0.43,0.29 -0.53,0.4 0.1,0.15 -0.02,0.06 0.15,0.13 0.09,0.22 0.35,0.38 0.54,0.52 0.22,0.16 0.43,0.29 0.69,0.39 0.43,0.17 1.32,0.31 1.87,0.23l0.23 -0.05c0.01,-0 0.03,-0.02 0.04,-0.02 0.01,-0 0.02,-0.01 0.03,-0.02 0.32,0.05 0.52,-0.18 0.79,-0.24l-0.02 0.66c0,0.77 -0.24,0.75 0.16,1.51l0.04 0.07c0,0.01 0.01,0.03 0.02,0.04 -0.05,0.35 0.18,1.03 0.24,1.4 -0.23,0.18 -0.34,0.33 -0.51,0.41 -0.75,-1.17 -0.82,-1.52 -1.92,-0.43 -0.32,0.31 -0.59,0.57 -0.95,0.86 -0.23,0.19 -0.95,0.65 -1.05,0.81l0.13 0.1c0.88,1.15 3.14,1.5 4.1,0.82 0.47,-0.34 0.54,-0.56 0.52,-1.34l0.67 1.84c0.03,0.16 0.06,0.28 0.12,0.42 0.03,0.06 0.05,0.12 0.09,0.17 0.1,0.15 0.03,0.06 0.13,0.14 -0,0.29 0.14,0.22 0.06,0.56 -0.03,0.13 -0.14,0.43 -0.19,0.53 -1.94,-1.27 -1.57,-0.02 -2.28,1.76 -0.16,0.41 -0.37,0.77 -0.53,1.2 0.09,0.08 0.01,0.03 0.15,0.03 0.29,0.33 1.66,0.28 2.36,-0.01 0.48,-0.2 0.96,-0.46 1.3,-0.82 0.15,-0.16 0.16,-0.3 0.38,-0.33 0.14,0.08 0.17,0.19 0.27,0.36zm-3.62 -12.85c0.13,-0.01 0.31,-0.15 0.55,-0.19 -0.01,0.45 0.02,0.74 -0.34,0.45 -0.06,-0.05 -0.09,-0.06 -0.12,-0.09 -0.09,-0.1 -0.04,-0.01 -0.09,-0.17zm1.92 -12.29l-0.04 0.13c-0.07,-0.02 -0.17,-0.02 -0.21,-0.03 -0.27,-0.08 -0.09,0.04 -0.16,-0.16 0.12,-0.08 0.18,-0.23 0.34,-0.35l0.08 0.4zm1.33 3.05l-0.4 0.17c-0,-0.08 -0,-0.15 -0.02,-0.23 -0.02,-0.09 -0.03,-0.07 -0.05,-0.11l0.07 -0.16c0.21,0.11 0.28,0.16 0.4,0.32zm-1.54 6.48l0.16 -0.51c0.17,0.07 0.25,0.14 0.36,0.29l-0.52 0.22zm0.28 10.88l-0.09 -0.38 0.37 0.07c-0.02,0.1 -0.03,0.13 -0.09,0.19 -0.13,0.15 0.01,0.06 -0.19,0.12zm-1.05 -5.97c0.06,0.12 0.16,0.16 0.26,0.23 -0.09,0.14 -0.22,0.18 -0.37,0.21 -0,-0.02 -0.02,-0.27 -0.02,-0.27 0.04,-0.19 -0.06,-0.09 0.13,-0.16zm1.03 -8.01c-0.09,-0.02 -0.15,-0.02 -0.22,-0.07 -0.21,-0.13 -0.08,-0.02 -0.14,-0.18 0.15,-0.05 0.21,-0.15 0.45,-0.24l-0.08 0.48zm0.57 16.58l-0.45 -0c0.02,-0.18 0.12,-0.3 0.26,-0.42l0.18 0.42zm-1.45 -3.7l-0.19 -0.23c-0.06,-0.07 -0.1,-0.13 -0.17,-0.19 -0.24,-0.23 -0.29,-0.14 -0.36,-0.36l0.46 -0.19c0.07,0.14 0.25,0.78 0.26,0.97zm0.37 -23.67l-0.12 -0.57 0.54 0.21c-0.07,0.16 -0.27,0.31 -0.41,0.36zm-1.46 -3.02c-0.07,0.01 -0.19,-0.04 -0.3,-0.06 -0.04,-0.01 -0.14,-0.02 -0.18,-0.03 -0.15,-0.07 -0.06,0.04 -0.14,-0.13 0.11,-0.07 0.2,-0.27 0.37,-0.4 0.13,0.13 0.2,0.43 0.24,0.62z"
+          class="fil0"
+        ></path>
+      </g>
+    </svg>
+  </div>
+  <div class="icon-3">
+    <svg
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 0 25.29 76.92"
+      style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+      version="1.1"
+      xml:space="preserve"
+      xmlns="http://www.w3.org/2000/svg">
+      <defs></defs>
+      <g id="Layer_x0020_1">
+        <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+        <path
+          d="M19.14 6.58c0.09,0.1 -0.02,0.03 0.17,0.15 0.04,0.03 0.19,0.09 0.27,0.13l0.16 0.02c0.12,0.14 0.02,0.06 0.22,0.18 0.63,0.37 1.81,0.52 2.51,0.53 0.42,-0.26 0.61,-1.58 0.55,-2.27 -0.11,-1.17 -1.02,-3.42 -2.17,-3.76 -0.84,-0.25 -1.19,0.02 -1.4,0.7 -0.03,0.1 -0.05,0.19 -0.09,0.28l-0.18 0.25c-0.18,-0.36 -0.77,-0.97 -1.2,-1.18 -0.64,-0.31 -0.36,-0.26 -0.84,-1.59l-0.75 0c0.2,0.63 0.44,1.27 0.61,1.92 0.17,0.64 0.47,1.46 0.58,2.05 -0.21,0.36 -0.43,0.5 -0.31,1.1 0.11,0.51 0.35,0.71 0.76,0.9 0.13,0.31 0.36,1.33 0.39,1.78 -0.68,0.24 -1.38,0.85 -1.62,1.43 -0.45,-0.47 -0.29,-1.59 -1.59,-1.22 -0.8,0.22 -1.09,0.8 -1.45,1.52 -0.58,1.18 -0.96,2.15 -0.6,3.58 0.04,0.17 0.13,0.4 0.19,0.55 0.11,0.29 0.09,0.34 0.35,0.44 1.74,-0.01 2.96,-0.82 4.13,-1.55 0.22,-0.13 0.65,-0.39 0.79,-0.62 0.74,-1.2 -0.74,-2.14 -1.7,-2.43 -0.01,-0.51 1.07,-0.87 1.7,-0.82 0.21,1.74 0.56,3.5 0.61,5.33 0.05,2.05 0.01,3.68 -0.08,5.71 -1.2,0.52 -0.99,0.65 -1.77,1.46 -0.39,-0.45 -0.22,-1.6 -1.59,-1.18 -0.79,0.24 -0.91,0.63 -1.42,1.55 -0.78,1.41 -0.95,2.66 -0.36,4.15 0.14,0.35 0.06,0.36 0.36,0.37 0.78,-0 1.47,-0.18 2.09,-0.43 0.51,-0.2 1.26,-0.76 1.69,-0.86 -0.18,0.3 -0.34,0.91 -0.48,1.25l-1.54 3.5c-1.75,0.08 -1.26,0.29 -2.27,0.59 0.1,-1.15 0.1,-1.69 -1.1,-1.78 -0.7,-0.05 -1.5,0.65 -1.91,0.96 -1.04,0.82 -1.93,1.81 -1.94,3.77 0.09,0.22 -0.03,0.09 0.18,0.11 0.24,0.36 1.4,0.49 1.94,0.58l0.19 -0.01 0.71 -0.01 0.08 -0.02 1.74 -0.17c0.25,0.04 0.03,-0.07 0.19,0.09l-2.62 4.74c-0.28,0.51 -0.56,1.2 -0.86,1.61 -0.44,-0.02 -0.69,-0.14 -1.18,-0.08 -0.38,0.04 -0.72,0.17 -1.08,0.22 0.1,-0.53 0.78,-1.5 -0.62,-1.96 -0.79,-0.26 -1.74,0.32 -2.33,0.6 -2.12,1.02 -2.81,3.28 -2.36,3.38 0.01,0.01 0.03,0.02 0.03,0.04l0.11 0.1c0.42,0.34 1.16,0.64 1.66,0.79 0.65,0.19 1.73,0.31 2.43,0.38 3,0.28 1.16,-2.8 1.09,-3.14 0.86,0.12 1.3,-0.05 1.81,0.56 -0.08,0.35 -0.53,1.2 -0.71,1.6 -0.74,1.61 -1.24,3.24 -1.73,4.96 -0.92,0.11 -1.11,0.44 -1.77,0.69 0.01,-1.08 0.1,-1.68 -1.14,-1.71 -0.55,-0.01 -0.8,0.17 -1.11,0.41 -1.43,1.08 -2.52,2.24 -2.53,4.15 -0,0.62 0.11,0.48 0.22,0.54 0.63,0.38 1.79,0.44 2.67,0.35 0.47,-0.05 0.97,-0.11 1.43,-0.2l0.98 -0.22c0.38,-0.08 0.14,-0.15 0.26,0.06 -0.08,0.78 -0.66,2.6 -0.56,3.29 -0.13,0.14 -0.07,0.08 -0.17,0.29 -0.06,0.13 -0.08,0.18 -0.12,0.33 -0.07,0.3 -0.02,0.6 -0.03,0.92 -0.09,0.94 -0.17,0.52 -0.78,0.94 -0.32,0.22 -0.57,0.55 -0.86,0.82 -0.29,-0.69 -0.22,-1.44 -1.39,-1.13 -0.93,0.25 -1.93,2.19 -2.03,3.16 -0.06,0.56 0.02,1.84 0.39,2.08 2,0.02 2.64,-0.6 4.08,-1.25l-0.01 0.28c-0.06,0.58 -0.22,2.09 -0.14,2.62 -0.44,0.37 -0.46,1.03 -0.12,1.49 -0.08,3.97 0.16,2.73 -0.77,3.57 -0.24,0.21 -0.37,0.4 -0.62,0.62 -0.36,-0.53 -0.09,-1.43 -1.37,-1.13 -0.98,0.23 -1.92,2.22 -2.06,3.14 -0.07,0.47 -0.07,1.79 0.41,2.09 0.86,0.04 1.94,-0.12 2.51,-0.52l0.16 -0.08c0.6,-0.17 1.39,-0.67 1.84,-0.94 0.12,0.18 0.04,0.07 0.14,0.1 -0.18,0.38 -0.31,0.07 -0.71,0.58 -0.67,0.86 0.33,1.72 0.89,2.31 0.6,0.64 1.71,1.63 2.94,1.88 0.38,-0.11 0.92,-1.2 1.04,-1.69 0.21,-0.86 0.15,-1.53 -0.05,-2.41 -0.22,-0.94 -0.24,-1.38 -1.01,-1.81 -0.93,-0.52 -1.19,0.28 -1.59,0.76 -0.21,-0.33 -0.33,-0.79 -0.58,-1.12 -0.48,-0.62 -0.48,-0.13 -0.5,-1.22 -0.02,-1.09 0.05,-2.25 0.01,-3.32 0.37,0.22 0.89,0.86 1.37,1.21 0.51,0.37 1.05,0.65 1.76,0.82 0.32,-0.02 0.92,-1.21 1.04,-1.68 0.22,-0.87 0.15,-1.53 -0.04,-2.41 -0.19,-0.86 -0.3,-1.41 -0.96,-1.79 -1.06,-0.6 -1.26,0.38 -1.71,0.74 -0.22,-0.8 -0.65,-1.34 -1.19,-1.71l0.5 -4.35 0.38 0.28c0.23,0.25 0.6,0.67 0.87,0.82 0.07,0.1 0.05,0.1 0.19,0.21 0.18,0.23 0.66,0.57 0.92,0.6 0.1,0.13 -0.01,0.03 0.16,0.16 0.08,0.06 0.1,0.07 0.18,0.11 0.14,0.07 0.26,0.1 0.44,0.15l0.45 0.17c0.35,0.08 0.75,-0.74 0.91,-1.05 0.21,-0.4 0.41,-1.07 0.43,-1.57 -0,-0.28 0.04,-0.67 -0.1,-0.85l0.03 -0.17c-0,-0.04 -0.01,-0.13 -0.01,-0.15 -0.05,-0.13 -0.03,-0.1 -0.09,-0.17 0.06,-0.51 -0.25,-1.75 -0.94,-2.22 -1.11,-0.74 -1.37,0.09 -1.86,0.69l-0.12 -0.2c-0.28,-0.56 -0.41,-1.06 -1,-1.45 0.04,-1.21 1.29,-5.03 1.31,-5.65 0.07,0.06 0.05,0.04 0.12,0.13 0.63,0.83 0.41,0.6 1.22,1.38 0.76,0.74 1.67,1.73 2.95,1.92 0.28,0.13 0.55,-0.41 0.69,-0.64 0.21,-0.34 0.36,-0.64 0.47,-1.02 0.36,-1.24 0.14,-3.92 -1.03,-4.6 -1.23,-0.72 -1.67,0.89 -1.75,0.72 -0.01,-0.01 -0.03,0.02 -0.04,0.03 -0.19,-0.33 -0.3,-0.68 -0.49,-1 -0.22,-0.38 -0.47,-0.51 -0.68,-0.79 0.39,-1.04 1.05,-2.29 1.59,-3.3 0.57,-1.06 1.2,-2.15 1.7,-3.17 1.43,-0.02 1.51,0.55 1.8,0.6 -0.1,0.19 -0.02,0.07 -0.16,0.2 -0.01,0.01 -0.21,0.13 -0.23,0.15 -0.8,0.47 -1.8,0.96 -1.37,2.09 0.14,0.37 0.42,0.53 0.75,0.73 1.23,0.73 2.46,1.53 4.32,1.53 0.28,-0.08 0.25,-0.15 0.35,-0.44 0.22,-0.63 0.33,-1.22 0.26,-1.93 -0.11,-1.05 -1.06,-3.33 -2.21,-3.65 -1.31,-0.37 -1.17,0.6 -1.56,1.21l-0.2 -0.19c-0.84,-0.96 -0.61,-0.56 -1.27,-1.09 0.16,-0.47 0.7,-1.32 0.98,-1.82 1.05,-1.91 1.94,-3.59 2.84,-5.61 0.73,0.01 1.23,0.31 1.57,0.68 -0.26,0.25 -1.37,0.7 -1.67,1.19 -0.51,0.8 -0.07,1.45 0.63,1.87 1.15,0.7 2.56,1.58 4.34,1.55 0.33,-0.09 0.46,-0.67 0.52,-0.98 0.28,-1.4 -0.01,-2.34 -0.66,-3.5 -0.49,-0.87 -0.67,-1.3 -1.44,-1.54 -1.15,-0.36 -1.27,0.44 -1.56,1.23 -0.65,-0.55 0.03,-0.23 -1.38,-1.25 0.22,-0.6 1.08,-2.59 1.06,-3.14 0.38,-0.35 0.52,-0.78 0.43,-1.4 0.22,-0.75 0.67,-4.16 0.53,-5 0.32,0.09 0.75,0.4 1.06,0.57 0.35,0.2 0.71,0.39 1.06,0.57 0.73,0.38 1.61,0.62 2.65,0.61 0.58,-0.21 0.64,-1.82 0.61,-2.32 -0.04,-0.79 -0.45,-1.64 -0.77,-2.19 -0.39,-0.68 -0.64,-1.3 -1.45,-1.52 -1.33,-0.36 -1.16,0.63 -1.55,1.24 -0.67,-0.66 -0.61,-0.87 -1.64,-1.37 -0.06,-2.55 -0.87,-5.97 -0.9,-6.74l0.15 -0.03 0.01 -0.03zm-14.34 62.71l-0.02 1.23c-0.17,-0.13 -0.38,-0.3 -0.62,-0.45 -0.2,-0.13 -0.4,-0.21 -0.59,-0.39 0.26,-0.28 0.65,-0.51 1.16,-0.55l0.07 0.15zm14.26 -66.46c-0.03,0.28 0.03,0.13 -0.15,0.29 -0.01,0.01 -0.24,0.12 -0.24,0.13 -0.22,0.12 -0.24,0.17 -0.54,0.21 0.01,-0.4 -0.17,-0.77 -0.25,-1.14 0.63,0.03 0.9,0.46 1.18,0.51zm-14.86 55.33c0.15,-0.05 0.34,-0.22 0.51,-0.31 0.29,-0.15 0.4,-0.14 0.78,-0.16 -0.03,0.41 -0.14,0.81 -0.08,1.19 -0.26,0.14 -0.08,0.13 -0.34,-0.03 -0.26,-0.16 -0.76,-0.47 -0.88,-0.69zm2.5 -3.73c0.16,-0.41 0.11,-0.97 0.32,-1.32 0.3,0.08 0.44,0.22 0.64,0.41 0.2,0.19 0.27,0.36 0.41,0.49 -0.16,0.21 0.06,0.08 -0.33,0.21 -0.1,0.03 -0.26,0.05 -0.36,0.08 -0.23,0.05 -0.43,0.12 -0.68,0.14zm0.14 8.74l-1.08 0.27c-0.09,-0.08 -0.07,0.14 -0.08,-0.17l0.07 -1.1c0.51,0.12 0.97,0.57 1.09,1.01zm-0.43 8.78c-0.17,0.02 -0.31,0.07 -0.44,0.1 -0.01,0 -0.23,0.03 -0.24,0.03 -0.22,-0.04 0,0.16 -0.14,-0.1l-0.01 -0.9c0.37,0.15 0.68,0.48 0.83,0.88zm7.48 -41.68c0.31,-0.02 0.51,-0.13 0.93,-0.12 0.35,0 0.54,0.09 0.82,0.17 -0.11,0.53 -0.59,0.91 -0.64,1.43 -0.25,-0.04 -0.12,0.01 -0.27,-0.15l-0.84 -1.31zm4.93 -8.23c-0.27,-0 -0.43,-0.17 -0.68,-0.32 -0.41,-0.23 -0.51,-0.16 -0.64,-0.47 0.15,-0.04 0.4,-0.31 0.62,-0.42 0.29,-0.15 0.49,-0.18 0.85,-0.23 0.05,0.51 -0.12,0.95 -0.14,1.43zm-12.94 26.21c0.63,-0.04 0.61,-0.21 1.47,-0.11l-0.33 1.55c-0.33,-0.14 -0.22,-0.21 -0.62,-0.71 -0.32,-0.39 -0.42,-0.39 -0.52,-0.74zm15.47 -33.38c-0.15,0.29 -0.36,0.33 -0.67,0.51 -0.26,0.15 -0.4,0.29 -0.69,0.42 -0.01,-0.23 0.02,-0.53 -0.08,-0.67l0.03 -0.86c0.33,0.01 0.6,0.1 0.83,0.21 0.22,0.11 0.42,0.34 0.58,0.38zm-12.41 30.37c0.14,-0.37 0.45,-1.36 0.68,-1.6 0.66,0.19 1.09,0.56 1.31,1.14 -0.34,0.04 -0.75,0.16 -1.08,0.25 -0.9,0.24 -0.77,0.49 -0.91,0.21z"
+          class="fil0"
+        ></path>
+      </g>
+    </svg>
+  </div>
+</button>
+          </div>
         </div>
+        <!-- fine bottone Scopri di piu -->
+
+        <div class="section" id="chisiamo">
+        <div class="fixed">
+          <div class="boxtesto">
+          <h1>Chi siamo</h1></div>
+       <div class="boxtestop"><p>La struttura è a conduzione familiare ed è attiva da 3 generazioni. 
+        Da sempre è un punto di riferimento per il turismo 
+        ragusano e con il passaggio alla nuova generazione ha subito un profondo rinnovamento 
+        in armonia con la natura e le tradizioni del luogo.
+            Pomelia è il primo hotel in Sicilia ad aver scelto di diventare
+            <br><a href="https://www.societabenefit.net/cosa-sono-le-societa-benefit/" target="_blank">Società Benefit.</a></p>
+          </div>
+        </div>
+        </div>
+        <div class="section" id="servizi">
+        <div class="fixed">
+          <div class="boxtesto">
+            <h1>Servizi ecosostenibili</h1></div>
+         <div class="boxtestop"><p>Hotel Pomelia mantiene il lusso ma a contatto con la sostenibilità 100%green.</p>
+            </div>
+          <div class="container">
+            <!-- card struttura -->
+              <div class="cardstruttura">
+              <h1>la struttura</h1>
+              <div class="cardstruttura__content">
+                <p class="cardstruttura__title">la struttura</p>
+                <p class="cardstruttura__description">
+                  Tutta la struttura è alimentata da energia rinnovabile, 
+                  in parte autoprodotta da pannelli solari. Le camere sono dotate di arredamenti 
+                  ricavati da materiali di recupero rielaborati da artigiani e artisti della zona, 
+                  come comodini, specchi e mobili.
+                </p>
+              </div>
+            </div>
+            <!-- card biancheria -->
+                <div class="cardbiancheria">
+                <h1>biancheria</h1>
+                <div class="cardbiancheria__content">
+                  <p class="cardbiancheria__title">Biancheria</p>
+                  <p class="cardbiancheria__description">
+                    La biancheria dell’intera struttura è stata recentemente 
+                    sostituita con tessuti in cotone biologico certificato GOTS e canapa, materiale meno
+                     impattante e che non rilascia microplastiche con i frequenti lavaggi 
+                     che sono necessari in un hotel.
+                     La biancheria non più utilizzata è stata 
+                     donata a una Onlus nella zona che ha provveduto a 
+                     distribuirla
+                      a famiglie in necessità.
+                  </p>
+                </div>
+              </div>
+            <!-- card Servizio Pensione -->
+              <div class="cardpensione">
+                <h1>Servizio pensione</h1>
+                <div class="cardpensione__content">
+                  <p class="cardpensione__title">Servizio Pensione</p>
+                  <p class="cardpensione__description">
+                 L’hotel include un servizio colazione, mezza pensione o di pensione completa a
+                  seconda del tipo di pernottamento scelto. I piatti serviti nel ristorante sono 
+                  tutti a km 0, in parte provenienti direttamente dall’orto biologico di proprietà. 
+                  Tutti gli altri ingredienti provengono da produttori locali.
+                  </p>
+                </div>
+              </div>
+            <!-- card Servizio Pensione -->
+        </div>
+      </div>
     </div>
-</div>
-<!-- Portfolio Siti web -->
-
-
- <!-- Modal Portfolio Body area Start -->
- <div class="modal fade" id="exampleModalCente" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true"><i data-feather="x"></i></span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="text-content" style="text-align: center; text-transform: uppercase;">
-                    <h3>Loghi</h3>
-                </div> 
-                <div class="row">
-                    <div class="card-container">
-                        <div class="card-single">
-                    <img src="assets/images/portfolio/loghi/Copertina-YT-new.png" alt="logo con scritta ARGE43">
-                        </div>
-                        <div class="card-single">
-                            <img src="assets/images/portfolio/loghi/DimpoTv-Logo-Fu-Trasp.png" alt="logo scritta DIMPOTV">
-                                </div>
-                                <div class="card-single">
-                                    <img src="assets/images/portfolio/loghi/LogoWnd.png" alt="logo scritta WND Webnicoladesign">
-                                        </div>
-                                        <div class="card-single">
-                                            <img src="assets/images/portfolio/loghi/StreetShark.png" alt="logo raffigurante uno squalo con denti aguzzi,
-                                             una bandana rossa in testa e una scritta StreetSharks sotto il logo dello squalo">
-                                                </div>
-                                                <div class="card-single">
-                                                    <img src="assets/images/portfolio/loghi/UrbexYeti (3).png" alt="Logo di uno Yeti e scritta UrbexYeti">
-                                                        </div>
-                                                        <div class="card-single">
-                                                            <img src="assets/images/portfolio/loghi/Classe94sfondo.png" alt="Logo scritta Classe94">
-                                                                </div>
-                    </div>
-                </div>
-                <!-- End of .row Body-->
-            </div>
+    <div class="section" id="contatti">
+      <div class="containerfooter">
+        <!-- Blocco sinistro: Testo -->
+        <div class="colonna-sinistra">
+          <div class="boxtesto">
+            <h1>Contattaci</h1>
+          </div>
+          <div class="boxtestop">
+            Hotel Pomelia è lieta di accogliervi a braccia aperte
+          </div>
         </div>
+    
+        <!-- Blocco destro: Form -->
+        <div class="colonna-destra">
+          <form action="#" method="POST">
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" required><br><br>
+    
+            <label for="cognome">Cognome:</label><br>
+            <input type="text" id="cognome" name="cognome" required><br><br>
+    
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+    
+            <label for="messaggio">Messaggio:</label><br>
+            <textarea id="messaggio" name="messaggio" rows="5" required></textarea><br><br>
+    
+            <button type="submit">Invia</button>
+          </form>
+        </div>
+      </div>
     </div>
-</div>
-
-  <!-- Inizio form contatti -->
-  <div class="rn-contact-area rn-section-gap section-separator" id="contacts">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="section-title text-center">
-                    <h2 class="title">CONTATTAMI</h2>
-                </div>
-            </div>
+<div class="box4"></div>    
+        <div class="social">
+          <p>social</p>
+          <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook" title="facebook"></a>
+          <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram" title="instagram"></a>
+          <a href="https://x.com/" target="_blank" class="fa fa-twitter" title="x-twitter"></a>
         </div>
-        <div class="row mt--50 mt_md--40 mt_sm--40 mt-contact-sm">
-            <div class="col-lg-5">
-                <div class="contact-about-area">
-                    <div class="thumbnail">
-                        <img src="assets/images/contact/contact1.png" alt="contact-img">
-                    </div>
-                    <div class="title-area">
-                        <h4 class="title">Nicola Berardi</h4>
-                        <span>FRONT-END DEVELOPER</span>
-                    </div>
-                    <div class="description">
-                            <h6>SONO PRONTO A CREARE L'INCREABILE.</h6>
-                        <span class="phone">Cellulare: <a href="#">+39 3333333333</a></span>
-                        <span class="mail">Email: <a href="info@webnicoladesign.it">info@webnicoladesign.it</a></span>
-                    </div>
-                    <div class="social-area">
-                        <span> E… se hai bisogno... E non mi trovi...<br> Cercami in un <s>sogno</s> SOCIAL...</span>
-                        <div class="social-icone">
-                            <a href="https://www.facebook.com/Webnicoladesign/?locale=it_IT" target="_blank"><i data-feather="facebook"></i></a>
-                            <a href="https://www.instagram.com/webnicoladesign/" target="_blank"><i data-feather="instagram"></i></a>
-                            <a href="https://www.linkedin.com/in/nicola-berardi-285a68284/" target="_blank"><i data-feather="linkedin"></i></a>
-                            <a href="https://github.com/NicolaWebDevelop" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#ffffff" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
-                            </svg></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div data-aos-delay="600" class="col-lg-7 contact-input">
-                <div class="contact-form-wrapper">
-                    <div class="introduce">
-
-                        <form class="rnt-contact-form rwt-dynamic-form row" id="contact-form" method="POST" action="#">
-
-                            <div class="col-lg-6">
-                                <div class="form-group">
-                                    <label for="contact-name">Nome</label>
-                                    <input class="form-control form-control-lg" name="contact-name" id="contact-name" type="text">
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="form-group">
-                                    <label for="contact-name">Cognome</label>
-                                    <input class="form-control form-control-lg" name="contact-name" id="contact-name" type="text">
-                                </div>
-                            </div>
-
-                            <div class="col-lg-12">
-                                <div class="form-group">
-                                    <label for="contact-email">Email</label>
-                                    <input class="form-control form-control-sm" id="contact-email" name="contact-email" type="email">
-                                </div>
-                            </div>
-
-                            <div class="col-lg-12">
-                                <div class="form-group">
-                                    <label for="subject">Oggetto</label>
-                                    <input class="form-control form-control-sm" id="subject" name="subject" type="text">
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="form-group">
-                                    <label for="contact-message">Messaggio</label>
-                                    <textarea name="contact-message" id="contact-message" cols="30" rows="10"></textarea>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-12">
-                                <button name="submit" type="submit" id="submit" class="rn-btn" onclick="sendMail()">
-                                    <span>INVIA MESSAGGIO</span>
-                                    <i data-feather="arrow-right"></i>
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
+      </div>
         </div>
-    </div>
-</div>
-<!-- Fine form contatti -->
-
-
-
-
-
-        <!-- Back to  top Start -->
-        <div class="backto-top">
-            <div>
-                <i data-feather="arrow-up"></i>
-            </div>
-        </div>
-    </main>
-
-    <!-- Start Footer Area -->
-    <div class="foo rn-section-gap section-separator">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="footer-area text-center">
-                        <div class="logo">
-                            <a href="#home">
-                                <img src="assets/images/logo/WebNicolaDesignW.png" alt="logo">
-                            </a>
-                        </div>
-                        <p class="description mt--30">© Nicola Berardi 2025.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Footer Area -->
-     
-    <!-- JS ============================================ -->
-    <script src="assets/js/vendor/jquery.js"></script>
-    <script src="assets/js/vendor/modernizer.min.js"></script>
-    <script src="assets/js/vendor/feather.min.js"></script>
-    <script src="assets/js/vendor/slick.min.js"></script>
-    <script src="assets/js/vendor/bootstrap.js"></script>
-    <script src="assets/js/vendor/text-type.js"></script>
-    <script src="assets/js/vendor/wow.js"></script>
-    <script src="assets/js/vendor/aos.js"></script>
-    <script src="assets/js/vendor/particles.js"></script>
-    <!-- main JS -->
-    <script src="assets/js/main.js"></script>
+      </div>
 </body>
-
 </html>
