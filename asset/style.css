@@ -72,6 +72,10 @@ body {
   color: white;
 }
 
+.span {
+  letter-spacing: 8px;
+}
+
 .titlesocial {
   font-size: 14px;
   text-transform: uppercase;
@@ -304,31 +308,53 @@ body {
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-/* ombre */
-.ombranera{
-filter: drop-shadow(50px 30px 6px rgba(0, 0, 0, 0.3));
+.ombranera {
+  filter: drop-shadow(50px 10px 6px rgba(0, 0, 0, 0.3));
 }
-.ombrabianca{
-  filter: drop-shadow(50px 30px 6px rgba(255, 255, 255, 0.3));
-  }
-/* fine ombre */
 
-.foto{
-max-width: 500px;
+.ombrabianca {
+  filter: drop-shadow(20px 15px 10px rgba(255, 255, 255, 0.445));
+}
+
+.foto {
+  max-width: 500px;
+}
+
+.mobile {
+  text-align: center;
 }
 
 @media (max-width: 768px) {
   .foto {
-    max-width: 80% !important;
+    max-width: 100% !important;
     height: auto !important;
     display: block;
-    margin: 0 auto;
+    margin: 30px auto;
+    margin-left: -25px;
   }
-.ombranera{
-    filter: drop-shadow(20px 20px 6px rgba(0, 0, 0, 0.3));
-    }
-    .ombrabianca{
-      filter: drop-shadow(20px 20px 6px rgba(255, 255, 255, 0.3));
-      }
-}
-/*# sourceMappingURL=style.css.map */
+  .ombranera {
+    filter: drop-shadow(55px 10px 15px rgba(0, 0, 0, 0.3));
+  }
+  .ombrabianca {
+    filter: drop-shadow(50px 10px 15px rgba(255, 255, 255, 0.3));
+  }
+  .mobile {
+    font-size: 0.74rem;
+  }
+  .titlecontattisocial {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    font-weight: 300;
+  }
+  .span {
+    font-size: 17px;
+    letter-spacing: 3px;
+  }
+  .descrizionecontattisocial {
+    font-size: 13px;
+    line-height: 30px;
+    font-weight: 300;
+    text-align: center;
+  }
+}/*# sourceMappingURL=style.css.map */
