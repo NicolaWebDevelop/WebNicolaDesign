@@ -309,7 +309,7 @@ body {
 filter: drop-shadow(50px 30px 6px rgba(0, 0, 0, 0.3));
 }
 .ombrabianca{
-  filter: drop-shadow(50px 30px 6px rgba(255, 255, 255, 0.445));
+  filter: drop-shadow(50px 30px 6px rgba(255, 255, 255, 0.3));
   }
 /* fine ombre */
 
@@ -325,10 +325,10 @@ max-width: 500px;
     margin: 0 auto;
   }
 .ombranera{
-    filter: drop-shadow(10px 10px 6px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(20px 20px 6px rgba(0, 0, 0, 0.3));
     }
     .ombrabianca{
-      filter: drop-shadow(10px 10px 6px rgba(255, 255, 255, 0.445));
+      filter: drop-shadow(20px 20px 6px rgba(255, 255, 255, 0.3));
       }
 }
 /*# sourceMappingURL=style.css.map */
