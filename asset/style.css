@@ -304,10 +304,33 @@ body {
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.prova {
-  filter: drop-shadow(50px 30px 6px rgba(0, 0, 0, 0.3));
+/* ombre */
+.ombranera{
+filter: drop-shadow(50px 30px 6px rgba(0, 0, 0, 0.3));
+}
+.ombrabianca{
+  filter: drop-shadow(50px 30px 6px rgba(255, 255, 255, 0.445));
+  }
+/* fine ombre */
+
+.foto{
+max-width: 500px;
 }
 
-.prova1 {
-  filter: drop-shadow(50px 30px 6px rgba(255, 255, 255, 0.445));
-}/*# sourceMappingURL=style.css.map */
+@media (max-width: 768px) {
+  .foto {
+    max-width: 70% !important;
+    height: auto !important;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+
+
+
+
+
+
+
+/*# sourceMappingURL=style.css.map */
