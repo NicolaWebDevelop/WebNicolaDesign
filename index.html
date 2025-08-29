@@ -1,0 +1,752 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WebNicolaDesign</title>
+  <link rel="stylesheet" href="asset/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="asset/img/favicon.ico">
+  <!-- Meta description per SEO -->
+  <meta name="description"
+    content="Portfolio e servizi di Web Design e sviluppo Frontend. Scopri chi sono e i miei progetti.">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Web Nicola Design" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://github.com/NicolaWebDevelop" />
+  <meta property="og:image"
+    content="https://github.com/NicolaWebDevelop/asset/img/Webnicoladesignsonoprontoacrearelincreabile.png" />
+  <meta property="og:description"
+    content="Portfolio e servizi di Web Design e sviluppo Frontend. Scopri chi sono e i miei progetti." />
+  <meta property="og:site_name" content="Web Nicola Design" />
+  <meta property="og:locale" content="it_IT" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Web Nicola Design" />
+  <meta name="twitter:description"
+    content="Portfolio e servizi di Web Design e sviluppo Frontend. Scopri chi sono e i miei progetti." />
+  <meta name="twitter:image"
+    content="https://github.com/NicolaWebDevelop/asset/img/Webnicoladesignsonoprontoacrearelincreabile.png" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("wjNhjw3fZZ_2CYTYb");
+    })();
+  </script>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbarNav">
+  <!-- Navbar sticky -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
+    <div class="container-fluid px-4">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="asset/logo/WebNicolaDesignW.png" alt="Logo" height="70">
+      </a>
+      <!-- Toggle responsive -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Menu -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto nav-underline text-light">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#chisono">Chi sono</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servizi">Servizi</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contatti">Contatti</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <!-- Sezione Hero -->
+    <section
+      class="container-fluid hero-section d-flex flex-column flex-md-row justify-content-between">
+      <div class="text-start col-md-6">
+        <p class="mb-1 text-black">HELLO, I'M</p>
+        <h1 class="titolo text-black">
+          Nicola Berardi<br>
+          Front-End Developer<br>
+          <span class="sottotitolo text-black">Based in La Spezia</span>
+        </h1>
+        <p class="descrizione mt-3 text-black">
+          Scrivo codice per far sembrare le cose semplici (spoiler: non lo sono). Il mio lavoro? Prendere un design
+          pixel-perfect e trasformarlo in una pagina web che non esploda su Internet Explorer. Ogni tanto mi sento più
+          psicologo del codice che programmatore: se il bottone non si comporta come dovrebbe, lo capisco. Lo ascolto.
+          Lo sistemo. Uso HTML, CSS, JavaScript e a volte litigo con React (ma poi facciamo pace). Se qualcosa è
+          responsive, fluido e funziona anche su uno schermo grande quanto un francobollo… probabilmente ci ho messo le
+          mani.
+        </p>
+        <!-- SOCIAL + SKILL -->
+        <div class="mt-4 row g-4">
+          <!-- Social -->
+          <div class="col-12 col-sm-6">
+            <span class="titlesocial d-block text-start mb-2">I miei social</span>
+            <ul class="social-share d-flex liststyle sfondosocial mb-0">
+              <li class="facebook"><a href="https://www.facebook.com/Webnicoladesign/?locale=it_IT" target="_blank"
+                  data-bs-toggle="tooltip" title="Facebook" rel="noopener noreferrer"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-facebook">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                  </svg></a>
+              </li>
+              <li class="instagram"><a href="https://www.instagram.com/webnicoladesign/" target="_blank"
+                  data-bs-toggle="tooltip" title="Instagram" rel="noopener noreferrer"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-instagram">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg></a>
+              </li>
+              <li class="linkedin"><a href="https://www.linkedin.com/in/nicola-berardi-285a68284/" target="_blank"
+                  data-bs-toggle="tooltip" title="Linkedin" rel="noopener noreferrer"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-linkedin">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg></a>
+              </li>
+              <li class="github"><a href="https://github.com/NicolaWebDevelop" target="_blank" data-bs-toggle="tooltip"
+                  title="Github" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                    </path>
+                  </svg></a>
+              </li>
+            </ul>
+          </div>
+          <!-- Skill -->
+          <div class="col-12 col-sm-6">
+            <span class="titlesocial d-block text-start mb-2">Le mie (S)Kill Me</span>
+            <ul class="social-share d-flex liststyle sfondosocial mb-0">
+              <li class="bloccosocial" data-bs-toggle="tooltip" title="HTML"><svg xmlns="http://www.w3.org/2000/svg"
+                  height="32" width="24"
+                  viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path fill="#ffffff"
+                    d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z">
+                  </path>
+                </svg></li>
+              <li class="bloccosocial" data-bs-toggle="tooltip" title="CSS"><svg xmlns="http://www.w3.org/2000/svg"
+                  height="32" width="32"
+                  viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path fill="#ffffff"
+                    d="M480 32l-64 368-223.3 80L0 400l19.6-94.8h82l-8 40.6L210 390.2l134.1-44.4 18.8-97.1H29.5l16-82h333.7l10.5-52.7H56.3l16.3-82H480z">
+                  </path>
+                </svg></li>
+              <li class="bloccosocial" data-bs-toggle="tooltip" title="Bootstrap"><svg
+                  xmlns="http://www.w3.org/2000/svg" height="32" width="36"
+                  viewBox="0 0 576 512"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path fill="#ffffff"
+                    d="M333.5 201.4c0-22.1-15.6-34.3-43-34.3l-50.4 0 0 71.2 42.5 0c32.8-.1 50.9-13.3 50.9-36.9zM517 188.6c-9.5-30.9-10.9-68.8-9.8-98.1 1.1-30.5-22.7-58.5-54.7-58.5L123.7 32c-32.1 0-55.8 28.1-54.7 58.5 1 29.3-.3 67.2-9.8 98.1-9.6 31-25.7 50.6-52.2 53.1l0 28.5c26.4 2.5 42.6 22.1 52.2 53.1 9.5 30.9 10.9 68.8 9.8 98.1-1.1 30.5 22.7 58.5 54.7 58.5l328.7 0c32.1 0 55.8-28.1 54.7-58.5-1-29.3 .3-67.2 9.8-98.1 9.6-31 25.7-50.6 52.1-53.1l0-28.5c-26.3-2.5-42.5-22.1-52-53.1zM300.2 375.1l-97.9 0 0-238.3 97.4 0c43.3 0 71.7 23.4 71.7 59.4 0 25.3-19.1 47.9-43.5 51.8l0 1.3c33.2 3.6 55.5 26.6 55.5 58.3 0 42.1-31.3 67.5-83.2 67.5zm-10-108.7l-50.1 0 0 78.4 52.3 0c34.2 0 52.3-13.7 52.3-39.5 0-25.7-18.6-38.9-54.5-38.9z" />
+                </svg></li>
+              <li class="bloccosocial" data-bs-toggle="tooltip" title="Figma"><svg xmlns="http://www.w3.org/2000/svg"
+                  height="32" width="24"
+                  viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path fill="#ffffff"
+                    d="M14 95.8C14 42.9 56.9 0 109.8 0H274.2C327.1 0 370 42.9 370 95.8C370 129.3 352.8 158.8 326.7 175.9C352.8 193 370 222.5 370 256C370 308.9 327.1 351.8 274.2 351.8H272.1C247.3 351.8 224.7 342.4 207.7 326.9V415.2C207.7 468.8 163.7 512 110.3 512C57.5 512 14 469.2 14 416.2C14 382.7 31.2 353.2 57.2 336.1C31.2 319 14 289.5 14 256C14 222.5 31.2 193 57.2 175.9C31.2 158.8 14 129.3 14 95.8zM176.3 191.6H109.8C74.2 191.6 45.4 220.4 45.4 256C45.4 291.4 74 320.2 109.4 320.4C109.5 320.4 109.7 320.4 109.8 320.4H176.3V191.6zM207.7 256C207.7 291.6 236.5 320.4 272.1 320.4H274.2C309.7 320.4 338.6 291.6 338.6 256C338.6 220.4 309.7 191.6 274.2 191.6H272.1C236.5 191.6 207.7 220.4 207.7 256zM109.8 351.8C109.7 351.8 109.5 351.8 109.4 351.8C74 352 45.4 380.8 45.4 416.2C45.4 451.7 74.6 480.6 110.3 480.6C146.6 480.6 176.3 451.2 176.3 415.2V351.8H109.8zM109.8 31.4C74.2 31.4 45.4 60.2 45.4 95.8C45.4 131.4 74.2 160.2 109.8 160.2H176.3V31.4H109.8zM207.7 160.2H274.2C309.7 160.2 338.6 131.4 338.6 95.8C338.6 60.2 309.7 31.4 274.2 31.4H207.7V160.2z">
+                  </path>
+                </svg></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Immagine -->
+      <div class="col-md-6 text-center mt-4 mt-md-0">
+        <img src="asset/img/Nicolaminuscolo.png" alt="Immagine personale profilo"
+          class="img-fluid rounded shadow bg-black prova" style="max-width: 500px;">
+      </div>
+    </section>
+    <!-- fine sezione Hero -->
+    <!-- Inizio sezione CHI SONO-->
+    <div class="container-fluid rn-section-gap section-separator bg-black" id="chisono" style="min-height:500px;">
+      <div class="section-title text-center mb-5">
+        <h2 class="titlebig mb-5 text-white">CHI SONO</h2>
+      </div>
+      <!-- Riga con i 3 pulsanti -->
+      <div class="row text-center mb-3">
+        <div class="col">
+          <a class="btn btn-chisono w-100" data-bs-toggle="collapse" href="#collapse1" role="button"
+            aria-expanded="false" aria-controls="collapse1">
+            <span style="color: white;">MI PRESENTO</span>
+          </a>
+        </div>
+        <div class="col">
+          <a class="btn btn-chisono w-100" data-bs-toggle="collapse" href="#collapse2" role="button"
+            aria-expanded="false" aria-controls="collapse2">
+            <span style="color: white;">LE MIE SKILL</span>
+          </a>
+        </div>
+        <div class="col">
+          <a class="btn btn-chisono w-100" data-bs-toggle="collapse" href="#collapse3" role="button"
+            aria-expanded="false" aria-controls="collapse3">
+            <span style="color: white;">CURRICULUM</span>
+          </a>
+        </div>
+      </div>
+      <!-- Contenitore dei pannelli -->
+      <!-- MI PRESENTO -->
+      <div id="accordionChiSono">
+        <div class="collapse" id="collapse1" data-bs-parent="#accordionChiSono">
+          <div class="card card-body bg-black">
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <h1 class="titolo text-light" style="letter-spacing: 13px;">Nicola Berardi</h1>
+                <p class="descrizione text-light">
+                  Ho preso l’attestato da Web Designer pieno di entusiasmo e (quasi) nessuna skill vera. Ho provato
+                  subito a lanciarmi nel mondo del freelance… e ho scoperto in fretta che la passione non basta quando
+                  non sai ancora come si posiziona un div. Ma niente panico: ho imparato la lezione e, invece di
+                  mollare, mi sono rimesso a studiare come si deve. Oggi sono un Front-end Developer con il codice nel
+                  cuore e la console del browser sempre aperta. Cerco un’azienda dove crescere, imparare ogni giorno
+                  qualcosa di nuovo, e magari scrivere codice che funziona al primo tentativo (ci credo ancora).
+                  <br><strong>il mio motto è: " Sono pronto a creare l'increabile!</strong>"
+                </p>
+              </div>
+              <div class="col-md-6 text-center mt-4 mt-md-0">
+                <img src="asset/img/Nicolaminuscolo.png" alt="Immagine personale profilo"
+                  class="img-fluid rounded shadow bg-white prova1" style="max-width: 300px;">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Le mie SKILL-->
+        <div class="collapse" id="collapse2" data-bs-parent="#accordionChiSono">
+          <div class="card card-body bg-black">
+            <div class="container-fluid">
+              <div class="row align-items-center"> <!-- Allinea verticalmente -->
+                <!-- Colonna sinistra -->
+                <div class="col-md-6 d-flex flex-column justify-content-center">
+                  <p class="text-white fw-bold">Design Skill</p>
+                  <span class="text-uppercase text-white">Adobe Photoshop</span>
+                  <div class="progress mb-2" role="progressbar" aria-label="Example 1px high" aria-valuenow="68"
+                    aria-valuemin="0" aria-valuemax="100" style="height: 1px">
+                    <div class="progress-bar bg-white" style="width: 68%"></div>
+                  </div>
+                  <div class="progress mb-3 bg-black" role="progressbar" aria-label="Example 20px high"
+                    aria-valuenow="68" aria-valuemin="0" aria-valuemax="100" style="height: 20px">
+                    <div class="progress-bar bg-white" style="width: 68%"></div>
+                  </div>
+                  <span class="text-uppercase text-white">Adobe Illustrator</span>
+                  <div class="progress mb-2" role="progressbar" aria-label="Example 1px high" aria-valuenow="70"
+                    aria-valuemin="0" aria-valuemax="100" style="height: 1px">
+                    <div class="progress-bar bg-white" style="width: 70%"></div>
+                  </div>
+                  <div class="progress mb-3 bg-black" role="progressbar" aria-label="Example 20px high"
+                    aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="height: 20px">
+                    <div class="progress-bar bg-white" style="width: 70%"></div>
+                  </div>
+                  <span class="text-uppercase text-white">Figma</span>
+                  <div class="progress mb-2" role="progressbar" aria-label="Example 1px high" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100" style="height: 1px">
+                    <div class="progress-bar bg-white" style="width: 75%"></div>
+                  </div>
+                  <div class="progress mb-3 bg-black" role="progressbar" aria-label="Example 20px high"
+                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="height: 20px">
+                    <div class="progress-bar bg-white" style="width: 75%"></div>
+                  </div>
+                </div>
+                <!-- Colonna destra -->
+                <div class="col-md-6 d-flex flex-column justify-content-center">
+                  <p class="text-white fw-bold">Web Dev Skill</p>
+                  <span class="text-uppercase text-white">Html - Css</span>
+                  <div class="progress mb-2" role="progressbar" aria-label="Example 1px high" aria-valuenow="90"
+                    aria-valuemin="0" aria-valuemax="100" style="height: 1px">
+                    <div class="progress-bar bg-white" style="width: 90%"></div>
+                  </div>
+                  <div class="progress mb-3 bg-black" role="progressbar" aria-label="Example 20px high"
+                    aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="height: 20px">
+                    <div class="progress-bar bg-white" style="width: 90%"></div>
+                  </div>
+                  <span class="text-uppercase text-white">JavaScript</span>
+                  <div class="progress mb-2" role="progressbar" aria-label="Example 1px high" aria-valuenow="25"
+                    aria-valuemin="0" aria-valuemax="100" style="height: 1px">
+                    <div class="progress-bar bg-white" style="width: 80%"></div>
+                  </div>
+                  <div class="progress mb-3 bg-black" role="progressbar" aria-label="Example 20px high"
+                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 20px">
+                    <div class="progress-bar bg-white" style="width: 80%"></div>
+                  </div>
+                  <span class="text-uppercase text-white">React</span>
+                  <div class="progress mb-2" role="progressbar" aria-label="Example 1px high" aria-valuenow="25"
+                    aria-valuemin="0" aria-valuemax="100" style="height: 1px">
+                    <div class="progress-bar bg-white" style="width: 70%"></div>
+                  </div>
+                  <div class="progress mb-3 bg-black" role="progressbar" aria-label="Example 20px high"
+                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 20px">
+                    <div class="progress-bar bg-white" style="width: 70%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- CURRICULUM -->
+        <div class="collapse" id="collapse3" data-bs-parent="#accordionChiSono">
+          <div class="card card-body bg-black">
+            <div class="row">
+              <!-- Formazione -->
+              <div class="col-md-6">
+                <h4 class="text-light mb-4">Formazione</h4>
+                <div class="timeline">
+                  <div class="timeline-item">
+                    <h5>Start2Impact</h5>
+                    <small class="text-minu">Università Online, 2024 - 2025</small>
+                    <p>Specializzazione Front-End Developer.</p>
+                  </div>
+                  <div class="timeline-item">
+                    <h5>Accademia 2KLAB</h5>
+                    <small class="text-minu">2KLAB, 2015 - 2017</small>
+                    <p>Attestato Web Design & Communication.</p>
+                  </div>
+                  <div class="timeline-item">
+                    <h5>Superiori L. EINAUDI - D. CHIODO</h5>
+                    <small class="text-minu">La Spezia, 2010 - 2015</small>
+                    <p>Operatore Grafico - Pubblicitario.</p>
+                  </div>
+                  <div class="timeline-item">
+                    <h5>Medie</h5>
+                    <small class="text-minu">Santo Stefano di Magra, 2005 - 2009</small>
+                    <p>Il peggior incubo di tutti.</p>
+                  </div>
+                  <div class="timeline-item">
+                    <h5>Elementari</h5>
+                    <small class="text-minu">Ponzano Belaso, 2000 - 2005</small>
+                    <p>Scrivere e parlare.</p>
+                  </div>
+                  <div class="timeline-item">
+                    <h5>Asilo</h5>
+                    <small class="text-minu">Ponzano Belaso, 1997 - 1999</small>
+                    <p>Balbettare e scarabocchiare.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Esperienza Lavorativa -->
+              <div class="col-md-6">
+                <h4 class="text-light mb-4">Esperienza Lavorativa</h4>
+                <div class="timeline">
+                  <div class="timeline-item">
+                    <h5>Web Designer</h5>
+                    <small class="text-minu">Freelance, 2017 - ∞</small>
+                    <p>Preso l'attestato di Web Designer ho provato a mettermi in gioco fin da subito,
+                      con pochissima esperienza e poche skils. Non ho mollato, ho ripreso in mano gli studi
+                      e sono diventato un Front-end Developer. Cerco un azienda con cui poter crescere
+                      e imparare sempre cose
+                      nuove.</p>
+                  </div>
+                  <div class="timeline-item">
+                    <h5>Web Master</h5>
+                    <small class="text-minu">Agenzia Myfastway, 16/03/2016-16/09/2016</small>
+                    <p>Garanzia Giovani all'interno dell'agenzia di accoglienza turistica MyFastway.
+                      Gestione del sito web, inserimento annunci dei clienti, preparare ricevute e fatture.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    <!-- fine sezione CHI SONO -->
+    <!-- SERVIZI -->
+    <div class="container-fluid rn-section-gap section-separator" id="servizi">
+      <div class="section-title text-center mb-5">
+        <h2 class="titlebig mb-5 text-black">SERVIZI</h2>
+      </div>
+      <div class="container-fluid text-center">
+        <div class="row g-3 mt-3">
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="card text-bg-dark mb-3 w-100 h-100">
+              <div class="card-header bg-black">
+                <h5 class="card-title d-flex justify-content-center align-items-center gap-2"
+                  style="text-transform: uppercase;">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="32" width="36"
+                    viewBox="0 0 576 512"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                    <path fill="#ffffff"
+                      d="M360.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm64.6 136.1c-12.5 12.5-12.5 32.8 0 45.3l73.4 73.4-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l96-96c12.5-12.5 12.5-32.8 0-45.3l-96-96c-12.5-12.5-32.8-12.5-45.3 0zm-274.7 0c-12.5-12.5-32.8-12.5-45.3 0l-96 96c-12.5 12.5-12.5 32.8 0 45.3l96 96c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 150.6 182.6c12.5-12.5 12.5-32.8 0-45.3z" />
+                  </svg>
+                  Front-End Dev
+                </h5>
+              </div>
+              <div class="card-body bg-black">
+                <p class="card-text">Scrivo codice che prende vita sullo schermo: HTML, CSS e JavaScript sono i miei
+                  superpoteri quotidiani.
+                  Amo trasformare idee e mockup in interfacce fluide, responsive e belle da usare (e da vedere!).
+                  Se un bottone è al posto giusto e funziona al primo clic... probabilmente c’è il mio zampino.
+                  Mi diverto a dare forma al web con un occhio al design e l’altro al codice.
+                  Browser in modalità “ispeziona” sempre aperta, perché il dettaglio fa la differenza!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="card text-bg-dark mb-3 w-100 h-100">
+              <div class="card-header bg-black">
+                <h5 class="card-title d-flex justify-content-center align-items-center gap-2"
+                  style="text-transform: uppercase;">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="32" width="36"
+                    viewBox="0 0 512 512"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                    <path fill="#ffffff"
+                      d="M471.6 21.7c-21.9-21.9-57.3-21.9-79.2 0L368 46.1 465.9 144 490.3 119.6c21.9-21.9 21.9-57.3 0-79.2L471.6 21.7zm-299.2 220c-6.1 6.1-10.8 13.6-13.5 21.9l-29.6 88.8c-2.9 8.6-.6 18.1 5.8 24.6s15.9 8.7 24.6 5.8l88.8-29.6c8.2-2.7 15.7-7.4 21.9-13.5L432 177.9 334.1 80 172.4 241.7zM96 64C43 64 0 107 0 160L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-96c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 96c0 17.7-14.3 32-32 32L96 448c-17.7 0-32-14.3-32-32l0-256c0-17.7 14.3-32 32-32l96 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L96 64z" />
+                  </svg>
+                  UI UX Design
+                </h5>
+              </div>
+              <div class="card-body bg-black">
+                <p class="card-text">Progetto interfacce che non solo piacciono agli occhi,
+                  ma soprattutto funzionano alla grande. Per me il design non è solo una questione di pixel ben
+                  allineati,
+                  ma un modo per rendere la vita dell’utente più semplice. Creo layout che raccontano una storia:
+                  quella dell’utente che finalmente trova quello che cerca senza stressare il mouse (o il dito!).</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="card text-bg-dark mb-3 w-100 h-100">
+              <div class="card-header bg-black">
+                <h5 class="card-title d-flex justify-content-center align-items-center gap-2"
+                  style="text-transform: uppercase;">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="32" width="36"
+                    viewBox="0 0 576 512"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                    <path fill="#ffffff"
+                      d="M480.5 10.3L259.1 158c-29.1 19.4-47.6 50.9-50.6 85.3 62.3 12.8 111.4 61.9 124.3 124.3 34.5-3 65.9-21.5 85.3-50.6L565.7 95.5c6.7-10.1 10.3-21.9 10.3-34.1 0-33.9-27.5-61.4-61.4-61.4-12.1 0-24 3.6-34.1 10.3zM288 400c0-61.9-50.1-112-112-112S64 338.1 64 400c0 3.9 .2 7.8 .6 11.6 1.8 17.5-10.2 36.4-27.8 36.4L32 448c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0c61.9 0 112-50.1 112-112z" />
+                  </svg>
+                  Logo & Icon Design
+                </h5>
+              </div>
+              <div class="card-body bg-black">
+                <p class="card-text">Disegno loghi che parlano anche quando stanno zitti. Un logo non è solo un
+                  disegnino carino: è la prima stretta di mano, il colpo d’occhio, l’anima visiva di un brand.
+                  E io adoro dargli forma, carattere e personalità (senza esagerare con i font pazzi, promesso).
+                  Ogni progetto parte da un’idea, passa per mille schizzi,
+                  qualche caffè, e arriva a un simbolo che funziona ovunque:
+                  sul biglietto da visita, sulla tazza del caffè e persino sulla favicon.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- fine sezione SERVIZI -->
+    <!-- sezione PORTFOLIO -->
+    <div class="container-fluid bg-black rn-section-gap section-separator" id="portfolio">
+      <div class="section-title text-center mb-5">
+        <h2 class="titlebig mb-5 text-white">PORTFOLIO</h2>
+      </div>
+      <div class="container-fluid text-center">
+        <div class="row justify-content-center g-4">
+          <!-- GRAFICA -->
+          <div class="col-12 col-md-4">
+            <a class="btn btn-chisono w-100" data-bs-toggle="modal" data-bs-target="#modalGrafica">
+              <img src="asset/img/Grafica/GraphicDesign.png" class="img-fluid mb-2" alt="Grafica">
+              <h3 class="text-center text-white">GRAFICA</h3>
+            </a>
+            <!-- Modal Grafica -->
+            <div class="modal fade" id="modalGrafica" tabindex="-1" aria-labelledby="modalGraficaLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header bg-dark">
+                    <h1 class="modal-title text-light fs-5" id="modalGraficaLabel">Grafica</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body bg-dark">
+                    <div class="container text-center">
+                      <!-- Interno del modal-body -->
+                      <div class="container text-center">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" style="align-items: center;">
+                          <div class="col">
+                            <img src="asset/img/Grafica/Dimpo.png" class="img-fluid rounded img-zoom">
+                          </div>
+                          <div class="col">
+                            <img src="asset/img/Grafica/Copia di Squali felpa.png" class="img-fluid rounded img-zoom">
+                          </div>
+                          <div class="col">
+                            <img src="asset/img/Grafica/Attenti al cane (30 × 20 cm) (4).png"
+                              class="img-fluid rounded img-zoom">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Fine Modal Grafica -->
+          <!-- SITI WEB -->
+          <div class="col-12 col-md-4">
+            <a class="btn btn-chisono w-100" data-bs-toggle="modal" data-bs-target="#modalSiti">
+              <img src="asset/img/SitiWeb/responsive-1622825_1280.png" class="img-fluid mb-2" alt="Siti Web">
+              <h3 class="text-white">SITI WEB</h3>
+            </a>
+            <!-- Modal Siti Web -->
+            <div class="modal fade" id="modalSiti" tabindex="-1" aria-labelledby="modalSitiLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header bg-dark">
+                    <h1 class="modal-title text-light fs-5" id="modalSitiLabel">Siti Web</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body bg-dark">
+                    <div class="container text-center">
+                      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" style="align-items: center;">
+                        <div class="col">
+                          <!-- Croce Verde Arcola -->
+                          <a href="https://www.croceverdearcola.org/" target="_blank">
+                            <img src="asset/img/SitiWeb/LogoCroceverdearcola.png" alt="Esempio"
+                              class="rounded float-star" data-bs-toggle="popover" data-bs-trigger="hover"
+                              data-bs-placement="top" title="SITO WEB CROCE VERDE ARCOLA"
+                              data-bs-content="Questo è il testo che appare quando passi sopra l'immagine."
+                              style="cursor: pointer;"></a>
+                          <!-- / Croce Verde Arcola -->
+                        </div>
+                        <div class="col">
+                          <!-- GreenEarth -->
+                          <a href="https://nicolawebdevelop.github.io/GreenEarth/" rel="noopener noreferrer" target="_blank">
+                            <img src="asset/img/SitiWeb/GreenEarth.png" alt="link per cliccare sul prototipo GreenEarth"
+                              class="img-fluid" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top"
+                              title="PROTOTIPO SITO GREENEARTH"
+                              data-bs-content="Questo è il testo che appare quando passi sopra l'immagine."
+                              style="cursor: pointer;"></a>
+                          <!-- / GreenEarth -->
+                        </div>
+                        <div class="col">
+                          <!-- Hotel Pomelia -->
+                          <a href="https://nicolawebdevelop.github.io/HotelPomelia/" rel="noopener noreferrer" target="_blank">
+                            <img src="asset/img/SitiWeb/Hotel Pomelia.png"
+                              alt="link per cliccare sul prototipo GreenEarth" class="rounded float-end"
+                              data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top"
+                              title="PROTOTIPO SITO HOTEL POMELIA"
+                              data-bs-content="Questo è il testo che appare quando passi sopra l'immagine."
+                              style="cursor: pointer;"></a>
+                          <!-- / Hotel Pomelia -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Fine Modal Siti Web -->
+          <!-- inizio LOGHI -->
+          <div class="col-12 col-md-4">
+            <a class="btn btn-chisono w-100" data-bs-toggle="modal" data-bs-target="#modalLoghi">
+              <img src="asset/img/loghi/LogolOGOOOO.png" class="img-fluid mb-2" alt="Loghi">
+              <h3 class="text-white">LOGHI</h3>
+            </a>
+            <!-- Modal Loghi -->
+            <div class="modal fade" id="modalLoghi" tabindex="-1" aria-labelledby="modalLoghiLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header bg-dark">
+                    <h1 class="modal-title text-light fs-5" id="modalLoghiLabel">Loghi</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body bg-dark">
+                    <div class="container text-center">
+                      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 g-5 align-items-center">
+                        <div class="col">
+                          <img src="asset/img/loghi/Classe94semplice-senzasfondonero.png" alt="Classe94"
+                            class="img-fluid rounded img-zoom" loading="lazy">
+                        </div>
+                        <div class="col">
+                          <img src="asset/img/loghi/Copertina-YT-new.png" alt="Copertina YouTube"
+                            class="img-fluid rounded img-zoom" loading="lazy">
+                        </div>
+                        <div class="col">
+                          <img src="asset/img/loghi/LogoWnd.png" alt="Logo WND" class="img-fluid rounded img-zoom"
+                            loading="lazy">
+                        </div>
+                        <div class="col">
+                          <img src="asset/img/loghi/StreetShark.png" alt="StreetShark"
+                            class="img-fluid rounded img-zoom" loading="lazy">
+                        </div>
+                        <div class="col">
+                          <img src="asset/img/loghi/UrbexYeti (3).png" alt="Urbex Yeti"
+                            class="img-fluid rounded img-zoom" loading="lazy">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Fine Modal Loghi -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- fine sezione PORTFOLIO -->
+    <!-- sezione CONTATTI -->
+    <div class="container-fluid rn-section-gap section-separator" id="contatti">
+      <div class="section-title text-center mb-5">
+        <h2 class="titlebig mb-5 text-black" style="text-transform: uppercase;">CONTATTI</h2>
+      </div>
+      <div class="container-fluid text-center">
+        <div class="container text-center">
+          <div class="row align-items-center">
+            <div class="col">
+              <div class="rettangolocontatti">
+                <img src="asset/img/loghi/LogoWnd.png" alt="Logo WND" class="img-fluid rounded-circle mb-3"
+                  style="width: 100px; height: 100px;">
+                <h5 class="titlecontattisocial mb-3 text-light">Nicola Berardi</h5>
+                <span style="letter-spacing: 8px;">FRONT-END DEVELOPER</span>
+                <h6 class="descrizionecontattisocial text-light mt-3 mb-3">SONO PRONTO A CREARE L'INCREABILE</h6>
+                <span class="d-inline-block mt-3 mb-3">
+                  <!-- Icona WhatsApp -->
+                  <svg xmlns="http://www.w3.org/2000/svg" height="20" width="17.5" viewBox="0 0 448 512">
+                    <!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#ffffff" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+                  <!-- Numero cliccabile -->
+                  <a href="https://wa.me/393333333333" target="_blank" style="color: white; text-decoration: none;">
+                    +39 333-3333333
+                  </a>
+                </span>
+                <h6 class="descrizionecontattisocial text-light mt-3 mb-3">E… se hai bisogno... 
+                  E non mi trovi
+                  <br>Cercami in un <s>sogno</s> SOCIAL...
+                </h6>
+                <div class="social">
+                  <span class="titlesocial text-light mt-3">I miei social</span>
+                  <ul class="social-share d-flex liststyle sfondosocial mb-0">
+                    <li class="facebook">
+                      <a href="https://www.facebook.com/Webnicoladesign/?locale=it_IT" target="_blank"
+                      data-bs-toggle="tooltip" title="Facebook" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="instagram">
+                      <a href="https://www.instagram.com/webnicoladesign/" target="_blank" data-bs-toggle="tooltip" title="Instagram" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="linkedin">
+                      <a href="https://www.linkedin.com/in/nicola-berardi-285a68284/" target="_blank"
+                      data-bs-toggle="tooltip" title="Linkedin" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                          <rect x="2" y="9" width="4" height="12" />
+                          <circle cx="4" cy="4" r="2" />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="github">
+                      <a href="https://github.com/NicolaWebDevelop" target="_blank" data-bs-toggle="tooltip" title="Github" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="container">
+                <form id="contact-form">
+                  <div class="row contact-form">
+                    <div class="mb-3 col-md-6">
+                      <label for="nome" class="form-label text-start d-block">Nome</label>
+                      <input type="text" class="form-control bg-black text-light" 
+                             id="nome" name="from_name" placeholder="Nome" required>
+                    </div>
+                    <div class="mb-3 col-md-6">
+                      <label for="cognome" class="form-label text-start d-block">Cognome</label>
+                      <input type="text" class="form-control bg-black text-light" 
+                             id="cognome" name="surname" placeholder="Cognome" required>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label text-start d-block">Email</label>
+                    <input type="email" class="form-control bg-black text-light" 
+                           id="email" name="reply_to" placeholder="email" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="oggetto" class="form-label text-start d-block">Oggetto</label>
+                    <input type="text" class="form-control bg-black text-light" 
+                           id="oggetto" name="subject" placeholder="Oggetto del messaggio" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="messaggio" class="form-label text-start d-block">Messaggio</label>
+                    <textarea class="form-control bg-black text-light" 
+                              id="messaggio" name="message" rows="5" 
+                              placeholder="Scrivi il tuo messaggio..." required></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-dark-hover">Invia Messaggio</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- Bottone back-to-top -->
+    <a href="#top" class="btn btn-light btn-lg back-to-top" role="button" aria-label="Torna su">
+      <svg xmlns="http://www.w3.org/2000/svg" height="20" width="17.5"
+        viewBox="0 0 448 512"><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+        <path
+          d="M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z" />
+      </svg>
+    </a>
+    <footer>
+      <div class="container-fluid bg-black text-light text-center py-3">
+        <p>© 2025 WebNicolaDesign. Tutti i diritti riservati.</p>
+        <p>Studente presso <a style="color: white;" href="https://www.start2impact.it/" target="_blank"
+            rel="noopener noreferrer">Start2impact.</a></p>
+    </footer>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- EmailJs-->
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function (event) {
+      event.preventDefault();
+      const name = document.getElementById('nome');
+      const email = document.getElementById('email');
+      const message = document.getElementById('messaggio');
+      if (name.value.trim().length < 2) {
+        alert("Il nome deve contenere almeno 2 caratteri.");
+        name.focus();
+        return;
+      }
+      const emailPattern = /^[^\s@]+@[^\s@]+.[^\s@]+$/;
+      if (!emailPattern.test(email.value)) {
+        alert("Inserisci un'email valida.");
+        email.focus();
+        return;
+      }
+      if (message.value.trim().length < 10) {
+        alert("Il messaggio deve contenere almeno 10 caratteri.");
+        message.focus();
+        return;
+      }
+      emailjs.sendForm('service_vfnu7rd', 'template_5k11298', this)
+        .then(function () {
+          alert('Grandissim*, ci sentiamo presto!');
+          document.getElementById('contact-form').reset();
+        }, function (error) {
+          alert('Errore nell\'invio. Riprova.');
+console.log(error);
+        });
+    });
+  </script>
+</body>
+</html>
