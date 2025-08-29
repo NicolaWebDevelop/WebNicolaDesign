@@ -311,3 +311,28 @@ body {
 .prova1 {
   filter: drop-shadow(50px 30px 6px rgba(255, 255, 255, 0.445));
 }/*# sourceMappingURL=style.css.map */
+
+
+
+
+/*  Global: immagini reattive ovunque */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* overflow: evita problemi nei container */
+.container, .home, .mi-presento, section {
+  overflow: hidden;
+}
+
+/* Media Query per dispositivi piccoli */
+@media (max-width: 768px) {
+  .home img, .mi-presento img, .container img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+}
