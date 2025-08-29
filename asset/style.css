@@ -319,7 +319,7 @@ max-width: 500px;
 
 @media (max-width: 768px) {
   .foto {
-    max-width: 50% !important;
+    max-width: 70% !important;
     height: auto !important;
     display: block;
     margin: 0 auto;
