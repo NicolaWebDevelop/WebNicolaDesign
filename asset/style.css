@@ -73,7 +73,7 @@ body {
 }
 
 .span {
-  letter-spacing: 8px;
+  letter-spacing: 8px !important;
 }
 
 .titlesocial {
