@@ -306,26 +306,3 @@ filter: drop-shadow(50px 30px 6px rgba(0, 0, 0, 0.3));
   }
 // fine ombre //
 
-
-
-/*  Global: immagini reattive ovunque */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-/*  overflow: evita problemi nei container */
-.container, .home, .mi-presento, section {
-  overflow: hidden;
-}
-
-/* Media Query per dispositivi mobile */
-@media (max-width: 768px) {
-  .home img, .mi-presento img, .container img {
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-    display: block;
-  }
-}
