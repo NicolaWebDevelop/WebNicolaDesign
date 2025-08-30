@@ -72,13 +72,7 @@ body {
   color: white;
 }
 
-.span {
-  display: inline-block;        /* resta trattato come blocco in linea */
-  white-space: nowrap;          /* non va mai a capo */
-  font-size: clamp(12px, 3.5vw, 17px); /* scala tra 12px e 17px in base alla larghezza viewport */
-  letter-spacing: clamp(1px, 0.8vw, 8px); /* spaziatura dinamica */
-  text-align: center;
-}
+
 
 .titlesocial {
   font-size: 14px;
@@ -351,10 +345,7 @@ body {
     letter-spacing: 7px;
     font-weight: 300;
   }
- .span {
-    font-size: clamp(12px, 3.5vw, 15px);
-    letter-spacing: clamp(1px, 0.8vw, 3px);
-  }
+
   .descrizionecontattisocial {
     font-size: 13px;
     line-height: 30px;
