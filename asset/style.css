@@ -322,7 +322,7 @@ body {
   text-align: center;
 }
 .span {
-font-size:80px;
+letter-spacing: 8px;
 }
 @media (max-width: 768px) {
   .foto {
@@ -348,9 +348,8 @@ font-size:80px;
     font-weight: 300;
   }
 .span{
-
-font-size: 150px;
-  
+ font-size: 15px;
+letter-spacing: 3px;
 }
   .descrizionecontattisocial {
     font-size: 13px;
