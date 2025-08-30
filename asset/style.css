@@ -324,6 +324,33 @@ body {
 .span {
 letter-spacing: 8px;
 }
+
+
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: transparent; /* verde WhatsApp */
+  color: white;
+  font-size: 17px;
+  font-weight: 300;
+  padding: 12px 24px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid white;
+}
+
+.btn-whatsapp:hover {
+  box-shadow: 0 6px 16px rgba(37, 211, 102, 0.5);
+  transform: translateY(-2px);
+}
+
+.btn-whatsapp svg {
+  flex-shrink: 0;
+}
+
+
 @media (max-width: 768px) {
   .foto {
     max-width: 100% !important;
