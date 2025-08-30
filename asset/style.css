@@ -321,7 +321,9 @@ body {
 .mobile {
   text-align: center;
 }
-
+.span {
+font-size:80px;
+}
 @media (max-width: 768px) {
   .foto {
     max-width: 100% !important;
@@ -345,7 +347,11 @@ body {
     letter-spacing: 7px;
     font-weight: 300;
   }
+.span{
 
+font-size: 150px;
+  
+}
   .descrizionecontattisocial {
     font-size: 13px;
     line-height: 30px;
