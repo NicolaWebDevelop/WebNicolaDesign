@@ -351,9 +351,9 @@ body {
     letter-spacing: 7px;
     font-weight: 300;
   }
-  .span {
-    font-size: 10px;
-    letter-spacing: 3px;
+ .span {
+    font-size: clamp(12px, 3.5vw, 15px);
+    letter-spacing: clamp(1px, 0.8vw, 3px);
   }
   .descrizionecontattisocial {
     font-size: 13px;
