@@ -1,7 +1,47 @@
+/* Base */
 body {
+  font-family: 'Roboto', sans-serif;
+  font-size: clamp(0.9rem, 1vw + 0.5rem, 1.1rem); /* testo fluido */
+  line-height: 1.6; /* più leggibile */
+  color: #222; /* testo ben visibile */
   margin: 0;
   padding: 0;
-  background-color: black;
+}
+
+/* Titoli */
+h1, h2, h3, h4 {
+  font-family: 'Poppins', sans-serif;
+  margin: 0 0 0.5em 0;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw + 1rem, 3rem);
+  font-weight: 600;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 3vw + 0.8rem, 2.2rem);
+  font-weight: 600;
+}
+
+h3 {
+  font-size: clamp(1.2rem, 2vw + 0.6rem, 1.6rem);
+  font-weight: 500;
+}
+
+/* Paragrafi */
+p {
+  font-size: clamp(0.95rem, 1vw + 0.5rem, 1.1rem);
+  margin: 0 0 1em 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Link */
+a {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
 }
 
 .d-flex {
@@ -307,11 +347,11 @@ body {
 }
 
 .ombranera {
-  filter: drop-shadow(50px 10px 6px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(50px 20px 6px rgba(0, 0, 0, 0.3));
 }
 
 .ombrabianca {
-  filter: drop-shadow(20px 15px 10px rgba(255, 255, 255, 0.445));
+  filter: drop-shadow(20px 15px 6px rgba(255, 255, 255, 0.445));
 }
 
 .foto {
@@ -359,11 +399,9 @@ letter-spacing: 8px;
     margin: 30px auto;
     margin-left: -25px;
   }
-  .ombranera {
-    filter: drop-shadow(55px 10px 15px rgba(0, 0, 0, 0.3));
-  }
+   .ombranera,
   .ombrabianca {
-    filter: drop-shadow(50px 10px 15px rgba(255, 255, 255, 0.3));
+    filter: none; /* niente ombra */
   }
   .mobile {
     font-size: 0.74rem;
