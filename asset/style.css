@@ -65,7 +65,7 @@ a {
 
 .titolo {
   font-weight: 700;
-  font-size: 55px;
+  font-size: clamp(2rem, 4vw + 1rem, 3.4375rem);
   line-height: 75px;
   margin-bottom: 22px;
   text-transform: uppercase;
