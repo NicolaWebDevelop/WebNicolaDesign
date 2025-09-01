@@ -390,6 +390,9 @@ letter-spacing: 8px;
   flex-shrink: 0;
 }
 
+.bordolinea{
+  outline: 1px solid #fff;
+}
 
 @media (max-width: 768px) {
   .foto {
