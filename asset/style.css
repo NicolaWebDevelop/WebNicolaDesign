@@ -1,18 +1,16 @@
+@charset "UTF-8";
 /* Base */
 body {
-  font-family: 'Roboto', sans-serif;
-  font-size: clamp(0.9rem, 1vw + 0.5rem, 1.1rem); /* testo fluido */
+  font-family: "Roboto", sans-serif;
   line-height: 1.6; /* più leggibile */
-  color: #222; /* testo ben visibile */
   margin: 0;
   padding: 0;
 }
 
 /* Titoli */
 h1, h2, h3, h4 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0 0 0.5em 0;
-  line-height: 1.2;
 }
 
 h1 {
@@ -40,8 +38,12 @@ p {
 
 /* Link */
 a {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   text-decoration: none;
+}
+
+.responsive-text {
+  font-size: 5vw; /* 5% della larghezza del viewport */
 }
 
 .d-flex {
@@ -65,9 +67,8 @@ a {
 
 .titolo {
   font-weight: 700;
-  font-size: clamp(2rem, 4vw + 1rem, 3.4375rem);
+  font-size: 8.6vh;
   line-height: 75px;
-  margin-bottom: 22px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -105,14 +106,14 @@ a {
   letter-spacing: 2px;
   text-transform: uppercase;
   border-radius: 6px;
-  transition: var(--transition);
   background: black;
-  box-shadow: var(--shadow-1);
   position: relative;
   color: white;
 }
 
-
+.span {
+  letter-spacing: 8px;
+}
 
 .titlesocial {
   font-size: 14px;
@@ -324,14 +325,12 @@ a {
 }
 /* Hover Social: bounce + scala + rotazione */
 .social-share li:hover {
- /* transform: translateY(-10px) scale(1.1) rotate(-10deg); */
   animation: bounce 0.6s ease;
   filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
 }
 
 /* Hover Skill quadrati: bounce + scala + rotazione */
 .social-share .bloccosocial:hover {
-/*  transform: translateY(-10px) scale(1.15) rotate(-10deg); */
   animation: bounce 0.6s ease;
   filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
 }
@@ -351,7 +350,7 @@ a {
 }
 
 .ombrabianca {
-  filter: drop-shadow(20px 15px 6px rgba(255, 255, 255, 0.445));
+  filter: drop-shadow(20px 15px 10px rgba(255, 255, 255, 0.445));
 }
 
 .foto {
@@ -361,10 +360,6 @@ a {
 .mobile {
   text-align: center;
 }
-.span {
-letter-spacing: 8px;
-}
-
 
 .btn-whatsapp {
   display: inline-flex;
@@ -390,7 +385,7 @@ letter-spacing: 8px;
   flex-shrink: 0;
 }
 
-.bordolinea{
+.bordolinea {
   outline: 1px solid #fff;
 }
 
@@ -401,7 +396,7 @@ letter-spacing: 8px;
     display: block;
     margin: 30px auto;
   }
-   .ombranera,
+  .ombranera,
   .ombrabianca {
     filter: none; /* niente ombra */
   }
@@ -414,10 +409,14 @@ letter-spacing: 8px;
     letter-spacing: 7px;
     font-weight: 300;
   }
-.span{
- font-size: 17px;
-letter-spacing: 3px;
-}
+  .span {
+    font-size: 16px;
+    letter-spacing: 3px;
+  }
+  .titolo {
+    line-height: 50px;
+    font-size: 4vh;
+  }
   .descrizionecontattisocial {
     font-size: 13px;
     line-height: 30px;
