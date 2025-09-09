@@ -113,6 +113,7 @@ a {
 
 .span {
   letter-spacing: 8px;
+  color: #474747;
 }
 
 .titlesocial {
@@ -426,4 +427,20 @@ a {
     font-weight: 300;
     text-align: center;
   }
+
+input::placeholder,
+textarea::placeholder {
+  color: rgb(82, 82, 82) !important;   /* colore placeholder */
+  opacity: 1;    /* evita che appaia troppo sbiadito */
+}
+
+  
+#chisono, #servizi, #portfolio, #contatti {
+  scroll-margin-top: 350px;
+}
+
+
+
+
+
 }/*# sourceMappingURL=style.css.map */
