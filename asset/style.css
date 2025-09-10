@@ -434,13 +434,20 @@ textarea::placeholder {
   opacity: 1;    /* evita che appaia troppo sbiadito */
 }
 
-  
 #chisono, #servizi, #portfolio, #contatti {
   scroll-margin-top: 350px;
+}
+}
+
+
+@media (max-width: 412px) {
+
+.mobile{
+  font-size: clamp(8px, 3vw, 10px);
+}
+
 }
 
 
 
-
-
-}/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
