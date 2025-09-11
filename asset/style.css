@@ -447,9 +447,14 @@ textarea::placeholder {
 }
 
 .ridotto{
-  font-size: clamp(8px, 3vw, 10px);
+  font-size: clamp(14px, 5vw, 19px);
 }
-
+.ridotto2{
+  font-size: clamp(10px, 4vw, 16px);
+}
+.ridotto3{
+  font-size: clamp(10px, 4vw, 13px);
+}
   
 }
 
