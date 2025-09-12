@@ -453,7 +453,7 @@ textarea::placeholder {
   font-size: clamp(10px, 4vw, 16px);
 }
 .ridotto3{
-  font-size: clamp(10px, 4vw, 10px);
+  font-size: clamp(10px, 4vw, 12px);
 }
   
 }
