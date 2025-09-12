@@ -447,7 +447,7 @@ textarea::placeholder {
 }
 
 .ridotto{
-  font-size: clamp(13px, 4vw, 17px);
+  font-size: clamp(13px, 4vw, 16px);
 }
 .ridotto2{
   font-size: clamp(10px, 4vw, 16px);
