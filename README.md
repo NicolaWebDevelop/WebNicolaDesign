@@ -8,12 +8,13 @@ Sono pronto a creare l'increabile 🚀
 ## 📂 Struttura del progetto
 - `index.html` → pagina principale
 - `/css` → fogli di stile
+-  `/scss` → fogli di stile sass
 - `/assets` → immagini e risorse grafiche
 
 ## 🛠️ Tecnologie usate
 - **HTML5**
 - **CSS3**
-- **Bootstrap**
+- **BOOTSTRAP**
 
 ## 📸 Anteprima
 ![Portfolio Screenshot](https://raw.githubusercontent.com/NicolaWebDevelop/WebNicolaDesign/refs/heads/main/asset/img/Anteprima%20sito.png)
