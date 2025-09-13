@@ -3,7 +3,7 @@
 Benvenuto nel mio portfolio!  
 Qui troverai i miei progetti e i miei servizi di **Web Design** e **sviluppo Frontend**.  
 Scrivo codice per trasformare un design **pixel-perfect** in una pagina web **responsive** e funzionale.  
-*Sono pronto a creare l'increabile* 🚀
+**Sono pronto a creare l'increabile** 🚀
 
 ## 📂 Struttura del progetto
 - `index.html` → pagina principale
