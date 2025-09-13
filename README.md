@@ -19,7 +19,7 @@ Sono pronto a creare l'increabile 🚀
 ![Portfolio Screenshot](https://raw.githubusercontent.com/NicolaWebDevelop/WebNicolaDesign/refs/heads/main/asset/img/Anteprima%20sito.png)
 
 ## 👨‍💻 Autore
-**Nicola Berardi** – Frontend Developer  
-🌍 [Portfolio](https://nicolawebdevelop.github.io/WebNicolaDesign/)  
-💼 [LinkedIn](https://linkedin.com/in/tuoprofilo)  
-📧 [Email](mailto:nicolag704@gmail.com)
+**Nicola Berardi** – Frontend Developer
+[![Portfolio](https://img.shields.io/badge/🌍_Visita_il_mio_Portfolio-000000?style=for-the-badge)](https://nicolawebdevelop.github.io/WebNicolaDesign/))
+
+💼 [LinkedIn](https://linkedin.com/in/tuoprofilo)
