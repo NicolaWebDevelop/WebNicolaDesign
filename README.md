@@ -20,5 +20,5 @@ Sono pronto a creare l'increabile 🚀
 
 ## 👨‍💻 Autore
 **Nicola Berardi** – Frontend Developer
-[![Portfolio](https://img.shields.io/badge/🌍_Visita_il_mio_Portfolio-000000?style=for-the-badge)](https://nicolawebdevelop.github.io/WebNicolaDesign/)
-💼 [LinkedIn](https://linkedin.com/in/tuoprofilo)
+[![Portfolio](https://img.shields.io/badge/🌍_Visita_il_mio_Portfolio-000000?style=for-the-badge)](https://nicolawebdevelop.github.io/WebNicolaDesign/)  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Nicola_Berardi-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nicola-berardi-285a68284/)
