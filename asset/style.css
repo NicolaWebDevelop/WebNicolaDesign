@@ -460,7 +460,7 @@ textarea::placeholder {
 
 
 @media (max-width: 480px) {
-  .social-share {
+  .social-mobile {
     display: flex;
     padding-left: 0;
     list-style: none;
