@@ -10,7 +10,7 @@ $section2: white;
 
 /* Base */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', 'Poppins';
   line-height: 1.6; /* più leggibile */
   margin: 0;
   padding: 0;
@@ -18,7 +18,7 @@ body {
 
 /* Titoli */
 h1, h2, h3, h4 {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', 'Roboto';
   margin: 0 0 0.5em 0;
 }
 
@@ -55,7 +55,6 @@ a {
   font-size: 5vw; /* 5% della larghezza del viewport */
 }
 
-
 .d-flex {
   justify-content: space-between;
   list-style: none;
@@ -70,7 +69,7 @@ a {
 }
 
 .hero-section {
-  padding-top: 140px;
+  padding-top: 10vh;
   padding-left: 10px;
   margin-bottom: 142px;
 }
@@ -122,6 +121,7 @@ a {
 }
 .span {
 letter-spacing: 8px;
+color: #474747;
 }
 .titlesocial {
   font-size: 14px;
@@ -389,6 +389,13 @@ text-align: center;
 }
 
 @media (max-width: 768px) {
+
+  .hero-section {
+    padding-top: 10dvh;
+    padding-left: 10px;
+    margin-bottom: 142px;
+  }
+
   .foto {
     max-width: 100% !important;
     height: auto !important;
@@ -400,7 +407,7 @@ text-align: center;
     filter: none; /* niente ombra */
   }
   .mobile{
-    font-size: clamp(5px, 5vw, 11px); 
+    font-size: clamp(10px, 3.5vw, 18px)
   }
   .titlecontattisocial {
     font-size: 20px;
@@ -429,9 +436,41 @@ letter-spacing: 3px;
 text-align: center;
 }
 
+input::placeholder,
+textarea::placeholder {
+  color: rgb(82, 82, 82) !important;   /* colore placeholder */
+  opacity: 1;    /* evita che appaia troppo sbiadito */
+}
+#chisono, #servizi, #portfolio, #contatti {
+  scroll-margin-top: 350px;
+}
+}
 
+@media (max-width: 412px) {
 
+.mobile{
+  font-size: clamp(8px, 3vw, 10px);
+}
 
+.ridotto{
+  font-size: clamp(14px, 5vw, 19px);
+}
+.ridotto2{
+  font-size: clamp(10px, 4vw, 16px);
+}
+.ridotto3{
+  font-size: clamp(10px, 4vw, 13px);
+}
 
 }
 
+@media (max-width: 480px) {
+  .social-mobile {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+    justify-content: center;
+    gap: 0;
+}
+  }
