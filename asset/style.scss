@@ -388,8 +388,12 @@ text-align: center;
 
 }
 
-@media (max-width: 768px) {
+.footer br:nth-of-type(1),
+.footer br:nth-of-type(3) {
+  display: none;
+}
 
+@media (max-width: 768px) {
   .hero-section {
     padding-top: 10dvh;
     padding-left: 10px;
@@ -444,6 +448,9 @@ textarea::placeholder {
 #chisono, #servizi, #portfolio, #contatti {
   scroll-margin-top: 350px;
 }
+.footer br {
+  display: block !important; /* mostra i br solo su mobile */
+}
 }
 
 @media (max-width: 412px) {
@@ -461,7 +468,9 @@ textarea::placeholder {
 .ridotto3{
   font-size: clamp(10px, 4vw, 13px);
 }
-
+.footer br {
+  display: block !important; /* mostra i br solo su mobile */
+}
 }
 
 @media (max-width: 480px) {
@@ -473,4 +482,21 @@ textarea::placeholder {
     justify-content: center;
     gap: 0;
 }
+.footer br {
+  display: block !important; /* mostra i br solo su mobile */
+}
+  }
+
+
+  @media (max-width: 360px) {
+
+    .ridotto2{
+      font-size: clamp(8px, 3vw, 13px);
+    }
+    .ridotto3{
+      font-size: clamp(8px, 3vw, 13px);
+    }
+    .footer br {
+      display: block !important; /* mostra i br solo su mobile */
+    }
   }
