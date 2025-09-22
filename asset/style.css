@@ -437,6 +437,11 @@ textarea::placeholder {
 #chisono, #servizi, #portfolio, #contatti {
   scroll-margin-top: 350px;
 }
+
+.back-to-top {
+  bottom: 14dvh;
+}
+  
 }
 
 
@@ -455,7 +460,9 @@ textarea::placeholder {
 .ridotto3{
   font-size: clamp(10px, 4vw, 12px);
 }
-  
+  .back-to-top {
+  bottom: 14dvh;
+}
 }
 
 
@@ -468,6 +475,10 @@ textarea::placeholder {
     justify-content: center;
     gap: 0;
 }
+
+  .back-to-top {
+  bottom: 14dvh;
+}
   }
 
 
@@ -479,6 +490,9 @@ textarea::placeholder {
     .ridotto3{
       font-size: clamp(8px, 3vw, 13px);
     }
+   .back-to-top {
+  bottom: 14dvh;
+}
   }
 
 
