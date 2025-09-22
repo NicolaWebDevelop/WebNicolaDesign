@@ -390,6 +390,12 @@ a {
   outline: 1px solid #fff;
 }
 
+.footer br:nth-of-type(1),
+.footer br:nth-of-type(3) {
+  display: none;
+}
+
+
 @media (max-width: 768px) {
   .foto {
     max-width: 100% !important;
@@ -438,8 +444,8 @@ textarea::placeholder {
   scroll-margin-top: 350px;
 }
 
-.back-to-top {
-  bottom: 14dvh;
+.footer br {
+  display: block !important; /* mostra i br solo su mobile */
 }
   
 }
@@ -460,8 +466,8 @@ textarea::placeholder {
 .ridotto3{
   font-size: clamp(10px, 4vw, 12px);
 }
-  .back-to-top {
-  bottom: 14dvh;
+.footer br {
+  display: block !important; /* mostra i br solo su mobile */
 }
 }
 
@@ -476,8 +482,8 @@ textarea::placeholder {
     gap: 0;
 }
 
-  .back-to-top {
-  bottom: 14dvh;
+.footer br {
+  display: block !important; /* mostra i br solo su mobile */
 }
   }
 
@@ -490,8 +496,8 @@ textarea::placeholder {
     .ridotto3{
       font-size: clamp(8px, 3vw, 13px);
     }
-   .back-to-top {
-  bottom: 14dvh;
+.footer br {
+  display: block !important; /* mostra i br solo su mobile */
 }
   }
 
