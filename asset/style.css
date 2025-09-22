@@ -471,4 +471,15 @@ textarea::placeholder {
   }
 
 
+ @media (max-width: 360px) {
+
+    .ridotto2{
+      font-size: clamp(8px, 3vw, 13px);
+    }
+    .ridotto3{
+      font-size: clamp(8px, 3vw, 13px);
+    }
+  }
+
+
 /*# sourceMappingURL=style.css.map */
