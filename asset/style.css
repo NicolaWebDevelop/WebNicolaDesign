@@ -2,7 +2,7 @@
 @import url(responsive-framework.css);
 /* Base */
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Poppins";
   line-height: 1.6; /* più leggibile */
   margin: 0;
   padding: 0;
@@ -10,7 +10,7 @@ body {
 
 /* Titoli */
 h1, h2, h3, h4 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Roboto";
   margin: 0 0 0.5em 0;
 }
 
@@ -40,7 +40,8 @@ p {
 /* Link */
 a {
   font-family: "Roboto", sans-serif;
-  text-decoration: none;
+  text-decoration: none !important;
+  cursor: pointer;
 }
 
 .responsive-text {
@@ -168,47 +169,47 @@ a {
   border: 2px solid white;
 }
 
+/* Timeline */
 .timeline {
   position: relative;
-  padding-left: 30px;
-  border-left: 2px solid #fff;
+  margin: 2rem 0;
+  padding-left: 40px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 4px;
+  height: 100%;
+  background: #fff;
+  border-radius: 2px;
 }
 
 .timeline-item {
+  margin-bottom: 40px;
   position: relative;
-  margin-bottom: 30px;
-  color: #ffffff;
 }
 
-.text-minu {
-  --bs-text-opacity: 1;
-  color: rgba(191, 191, 191, 0.88) !important;
-}
-
-.timeline-dot {
+.timeline-item::before {
+  content: "";
   position: absolute;
-  left: -9px;
-  top: 0;
-  width: 18px;
-  height: 18px;
+  top: 5px;
+  left: -28px;
+  width: 20px;
+  height: 20px;
   background: #fff;
   border-radius: 50%;
-  z-index: 1;
+  box-shadow: 0 0 10px #000000;
 }
 
-.timeline-date {
-  font-weight: bold;
-  color: #0dcaf0;
-  margin-bottom: 5px;
-}
-
-.timeline-content h5 {
-  margin-top: 0;
-  font-size: 1.2rem;
+.timeline-item h5 {
   color: #fff;
+  font-weight: bold;
 }
 
-.timeline-content p {
+.timeline-item p {
   margin: 0;
   color: #ccc;
 }
@@ -390,13 +391,54 @@ a {
   outline: 1px solid #fff;
 }
 
-.footer br:nth-of-type(1),
-.footer br:nth-of-type(3) {
-  display: none;
+.portfolio-img {
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
+.portfolio-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.portfolio-img:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-img:hover img {
+  transform: scale(1);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  font-size: 1.2rem;
+  font-weight: 500;
+  pointer-events: none; /* permette di cliccare i link sotto */
+}
+
+.portfolio-img:hover .overlay {
+  opacity: 1;
+}
 
 @media (max-width: 768px) {
+  .hero-section {
+    padding-top: 10dvh;
+    padding-left: 10px;
+    margin-bottom: 142px;
+  }
   .foto {
     max-width: 100% !important;
     height: auto !important;
@@ -408,7 +450,7 @@ a {
     filter: none; /* niente ombra */
   }
   .mobile {
-    font-size: clamp(5px, 5vw, 11px);
+    font-size: clamp(10px, 3.5vw, 18px);
   }
   .titlecontattisocial {
     font-size: 20px;
@@ -433,45 +475,39 @@ a {
     font-weight: 300;
     text-align: center;
   }
-
-input::placeholder,
-textarea::placeholder {
-  color: rgb(82, 82, 82) !important;   /* colore placeholder */
-  opacity: 1;    /* evita che appaia troppo sbiadito */
+  input::-moz-placeholder, textarea::-moz-placeholder {
+    color: rgb(82, 82, 82) !important; /* colore placeholder */
+    opacity: 1; /* evita che appaia troppo sbiadito */
+  }
+  input::placeholder,
+  textarea::placeholder {
+    color: rgb(82, 82, 82) !important; /* colore placeholder */
+    opacity: 1; /* evita che appaia troppo sbiadito */
+  }
+  #chisono, #servizi, #portfolio, #contatti {
+    scroll-margin-top: 350px;
+  }
+  .footer br {
+    display: block !important; /* mostra i br solo su mobile */
+  }
 }
-
-#chisono, #servizi, #portfolio, #contatti {
-  scroll-margin-top: 350px;
-}
-
-.footer br {
-  display: block !important; /* mostra i br solo su mobile */
-}
-  
-}
-
-
 @media (max-width: 412px) {
-
-.mobile{
-  font-size: clamp(8px, 3vw, 10px);
+  .mobile {
+    font-size: clamp(8px, 3vw, 10px);
+  }
+  .ridotto {
+    font-size: clamp(14px, 5vw, 19px);
+  }
+  .ridotto2 {
+    font-size: clamp(10px, 4vw, 16px);
+  }
+  .ridotto3 {
+    font-size: clamp(10px, 4vw, 13px);
+  }
+  .footer br {
+    display: block !important; /* mostra i br solo su mobile */
+  }
 }
-
-.ridotto{
-  font-size: clamp(13px, 4vw, 16px);
-}
-.ridotto2{
-  font-size: clamp(10px, 4vw, 16px);
-}
-.ridotto3{
-  font-size: clamp(10px, 4vw, 12px);
-}
-.footer br {
-  display: block !important; /* mostra i br solo su mobile */
-}
-}
-
-
 @media (max-width: 480px) {
   .social-mobile {
     display: flex;
@@ -480,26 +516,19 @@ textarea::placeholder {
     margin: 0;
     justify-content: center;
     gap: 0;
-}
-
-.footer br {
-  display: block !important; /* mostra i br solo su mobile */
-}
   }
-
-
- @media (max-width: 360px) {
-
-    .ridotto2{
-      font-size: clamp(8px, 3vw, 13px);
-    }
-    .ridotto3{
-      font-size: clamp(8px, 3vw, 13px);
-    }
-.footer br {
-  display: block !important; /* mostra i br solo su mobile */
-}
+  .footer br {
+    display: block !important; /* mostra i br solo su mobile */
   }
-
-
-/*# sourceMappingURL=style.css.map */
+}
+@media (max-width: 360px) {
+  .ridotto2 {
+    font-size: clamp(8px, 3vw, 13px);
+  }
+  .ridotto3 {
+    font-size: clamp(8px, 3vw, 13px);
+  }
+  .footer br {
+    display: block !important; /* mostra i br solo su mobile */
+  }
+}/*# sourceMappingURL=style.css.map */
