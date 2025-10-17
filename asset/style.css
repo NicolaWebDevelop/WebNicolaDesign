@@ -213,7 +213,9 @@ a {
   margin: 0;
   color: #ccc;
 }
-
+.text-minu{
+color: #ffffff66
+}
 .card-header:first-child {
   border-color: white;
 }
