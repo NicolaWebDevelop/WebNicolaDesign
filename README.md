@@ -16,7 +16,7 @@ Sono pronto a creare l'increabile 🚀
 - **Bootstrap5**
 
 ## 📸 Anteprima
-![Portfolio Screenshot](https://github.com/NicolaWebDevelop/asset/img/anteprimasito.png)
+![Portfolio Screenshot](https://github.com/NicolaWebDevelop/WebNicolaDesign/blob/main/asset/img/anteprimasito.png?raw=true)
 
 ## 👨‍💻 Autore
 **Nicola Berardi** – Frontend Developer  
