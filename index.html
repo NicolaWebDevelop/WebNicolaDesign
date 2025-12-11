@@ -642,24 +642,28 @@ console.log(error);
         });
     });
   </script>
-  <!-- script loader -->
-  <script>
-    const loader = document.getElementById("loader");
-    const mainContent = document.getElementById("mainContent");
-    const loaderVideo = document.getElementById("loaderVideo");
-  
-    // Quando il video FINISCE
-    loaderVideo.addEventListener("ended", () => {
-      loader.classList.add("hidden");
-  
-      setTimeout(() => {
-        loader.style.display = "none";
-        mainContent.style.display = "block";
-      }, 700); // tempo dissolvenza
-    });
-  </script>
+<!-- script loader -->
+   <script>
+  const loader = document.getElementById("loader");
+  const mainContent = document.getElementById("mainContent");
+  const loaderVideo = document.getElementById("loaderVideo");
+
+  loaderVideo.addEventListener("ended", () => {
+  loader.classList.add("hidden");
+
+  setTimeout(() => {
+    loader.style.display = "none";
+    
+    // Scrolla la pagina in alto
+    window.scrollTo(0, 0);
+
+    mainContent.style.display = "block";
+  }, 700); // tempo del fade-out
+});
+</script>
 </body>
 </html>
+
 
 
 
