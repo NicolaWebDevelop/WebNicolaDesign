@@ -36,6 +36,19 @@
   </script>
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbarNav">
+   <!-- PROVA LOADER VIDEO ANIMAZIONE -->
+<!-- LOADER -->
+<div id="loader">
+  <video id="loaderVideo" autoplay muted playsinline preload="auto">
+    <source src="asset/videoloader/alberovideo.mp4" type="video/mp4">
+  </video>
+  <!-- Logo in alto a sinistra -->
+  <img src="asset/img/loghi/LogoWnd.png" alt="Logo" class="loader-logo">
+  <!-- Testo sotto l'albero -->
+  <h1 class="loader-text">Buone Feste da <span>WebNicolaDesign</span></h1>
+</div>
+</div>
+   <!-- FINE PROVA LOADER VIDEO ANIMAZIONE -->
   <!-- Navbar sticky -->
   <nav class="navbar navbar-expand-lg text-center navbar-dark bg-black sticky-top">
     <div class="container-fluid px-4">
@@ -629,7 +642,24 @@ console.log(error);
         });
     });
   </script>
+  <!-- script loader -->
+  <script>
+    const loader = document.getElementById("loader");
+    const mainContent = document.getElementById("mainContent");
+    const loaderVideo = document.getElementById("loaderVideo");
+  
+    // Quando il video FINISCE
+    loaderVideo.addEventListener("ended", () => {
+      loader.classList.add("hidden");
+  
+      setTimeout(() => {
+        loader.style.display = "none";
+        mainContent.style.display = "block";
+      }, 700); // tempo dissolvenza
+    });
+  </script>
 </body>
 </html>
+
 
 
