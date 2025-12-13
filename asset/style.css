@@ -502,7 +502,7 @@ color: #ffffff66
 /* Pulsante Salta intro festivo */
 .skip-btn {
   position: absolute;
-  bottom: -1%; /* sotto la scritta */
+  bottom: 1%; /* sotto la scritta */
   left: 50%;
   transform: translateX(-50%);
   padding: 12px 25px;
