@@ -276,7 +276,7 @@ a {
 
 .back-to-top {
   position: fixed;
-  bottom: 20px;
+  bottom: 12dvh;
   right: 20px;
   border-radius: 50%;
   font-size: 24px;
@@ -284,6 +284,21 @@ a {
   z-index: 9999;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
+/* Freccia scroll */
+.scroll-arrow {
+  position: fixed;
+  right: 20px;
+  padding: 8px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+  opacity: 0; /* invisibile inizialmente */
+  transition: opacity 0.3s ease;
+}
+.scroll-arrow.show {
+  opacity: 1;
+}
+/* Fine freccia scroll */  
 
 /* Base per tutti i li (social + skill) */
 .social-share li {
