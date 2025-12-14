@@ -412,6 +412,7 @@ color: #ffffff66
 
 
 
+
  /* Stile loader */
  /* --- LOADER FULLSCREEN --- */
 #loader {
@@ -440,10 +441,7 @@ color: #ffffff66
   min-height: 100%;
   transform: translate(-50%, -50%);
   object-fit: cover;
-  pointer-events: none;
 }
-
-
 
 /* --- LOGO IN ALTO A SINISTRA --- */
 .loader-logo {
@@ -463,6 +461,8 @@ color: #ffffff66
   width: 100%;
   text-align: center;
   color: white;
+  font-size: 2rem;
+  font-weight: 600;
   z-index: 3;
   animation: fadeInUp 1.8s ease forwards;
 }
@@ -473,6 +473,7 @@ color: #ffffff66
     width: 120px;
   }
   .loader-text {
+    font-size: 1.5rem;
     bottom: 10%;
   }
 }
@@ -482,6 +483,7 @@ color: #ffffff66
     width: 90px;
   }
   .loader-text {
+    font-size: 1.2rem;
     bottom: 8%;
   }
 }
@@ -496,47 +498,6 @@ color: #ffffff66
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
-
-
-/* Pulsante Salta intro festivo */
-.skip-btn {
-  position: absolute;
-  bottom: 1%; /* sotto la scritta */
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 12px 25px;
-  color: white;
-  background: #ff1f1f;
-  border: 2px solid #fff;
-  border-radius: 12px;
-  cursor: pointer;
-  z-index: 100001;
-  transition: all 0.3s ease;
-  box-shadow: 0 0 8px rgba(255, 31, 31, 0.6);
-  animation: pulse 2s infinite;
-  pointer-events: auto;
-}
-
-/* Hover glow */
-.skip-btn:hover {
-  background: #ff4c4c;
-  box-shadow: 0 0 15px rgba(255, 31, 31, 0.9), 0 0 25px rgba(255, 255, 255, 0.4);
-  transform: translateX(-50%) scale(1.05);
-}
-
-/* Responsivo */
-@media(max-width: 768px){
-  .skip-btn {
-    padding: 10px 20px;
-  }
-}
-
-@media(max-width: 480px){
-  .skip-btn {
-    padding: 8px 16px;
-  }
-}
-
 // fine Loader //
 
 
