@@ -6,12 +6,6 @@ body {
   line-height: 1.6; /* più leggibile */
   margin: 0;
   padding: 0;
-  overflow: hidden;
-}
-/* BLOCCO TESTO MOBILE AUTO-RESIZE */
-html {
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
 }
 
 /* Titoli */
@@ -219,9 +213,11 @@ a {
   margin: 0;
   color: #ccc;
 }
-.text-minu{
-color: #ffffff66
+
+.text-minu {
+  color: rgba(255, 255, 255, 0.4);
 }
+
 .card-header:first-child {
   border-color: white;
 }
@@ -415,97 +411,144 @@ color: #ffffff66
 .portfolio-img:hover .overlay {
   opacity: 1;
 }
- /* Stile loader */
-/* LOADER FULLSCREEN */
+
+/* Stile loader */
+/* --- LOADER FULLSCREEN --- */
 #loader {
   position: fixed;
   inset: 0;
-  background: #000;
-  z-index: 9999;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  /* Altezza viewport dinamica su mobile */
-  height: 100dvh;
-  height: 100vh; /* fallback */
-  transition: opacity 0.6s ease;
-}
-
-#loader.hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-
-/* VIDEO */
-#loader video {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  overflow: hidden;
+  background: black;
+  z-index: 99999;
+  opacity: 1;
+  transition: opacity 0.7s ease;
+}
 
-  /* disabilita click sul video per pulsante skip */
+/* Fade-out */
+#loader.hidden {
+  opacity: 0;
+}
+
+/* Video responsivo */
+#loader video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  -o-object-fit: cover;
+     object-fit: cover;
   pointer-events: none;
 }
 
-/* LOGO */
+/* --- LOGO IN ALTO A SINISTRA --- */
 .loader-logo {
   position: absolute;
-  top: env(safe-area-inset-top, 20px);
-  left: env(safe-area-inset-left, 20px);
-  width: 120px;
-  z-index: 10001;
+  top: 25px;
+  left: 25px;
+  width: 160px;
+  height: auto;
+  z-index: 3;
+  animation: fadeIn 1.2s ease forwards;
 }
 
-/* TESTO */
+/* --- TESTO SOTTO L'ALBERO (centrato) --- */
 .loader-text {
   position: absolute;
-  bottom: 10dvh; /* altezza relativa dinamica */
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: 1%; /* qui lo avvicini / allontani dall’albero */
+  width: 100%;
   text-align: center;
   color: white;
-  font-size: 1.8rem; /* desktop */
-  line-height: 1.2;
-  z-index: 10001;
+  font-size: 2rem;
+  font-weight: 600;
+  z-index: 3;
+  animation: fadeInUp 1.8s ease forwards;
 }
 
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .loader-logo {
+    width: 120px;
+  }
+  .loader-text {
+    font-size: 1.5rem;
+    bottom: 10%;
+  }
+}
+@media (max-width: 480px) {
+  .loader-logo {
+    width: 90px;
+  }
+  .loader-text {
+    font-size: 1.2rem;
+    bottom: 8%;
+  }
+}
+/* Animazioni */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Pulsante Salta intro festivo */
 .skip-btn {
   position: absolute;
-  bottom: 4dvh; /* posizione relativa al viewport reale */
+  bottom: 1%; /* sotto la scritta */
   left: 50%;
   transform: translateX(-50%);
-  padding: 12px 28px;
-  border: none;
-  border-radius: 30px;
-  background: white;
-  color: black;
-  font-weight: bold;
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background: #ff1f1f;
+  border: 2px solid #fff;
+  border-radius: 12px;
   cursor: pointer;
-  z-index: 10001;
+  z-index: 10000;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 8px rgba(255, 31, 31, 0.6);
+  animation: pulse 2s infinite;
+  pointer-events: auto;
 }
 
-/* MOBILE RESPONSIVE */
+/* Hover glow */
+.skip-btn:hover {
+  background: #ff4c4c;
+  box-shadow: 0 0 15px rgba(255, 31, 31, 0.9), 0 0 25px rgba(255, 255, 255, 0.4);
+  transform: translateX(-50%) scale(1.05);
+}
+
+/* Responsivo */
 @media (max-width: 768px) {
-  .loader-text {
-    font-size: 1.4rem;
-    bottom: 8dvh;
-    width: 90%;
-  }
-
   .skip-btn {
-    bottom: 4dvh;
-    padding: 10px 24px;
-  }
-
-  .loader-logo {
-    width: 100px;
+    padding: 10px 20px;
+    font-size: 0.9rem;
   }
 }
-/* fine Loader */
-
-
-
+@media (max-width: 480px) {
+  .skip-btn {
+    padding: 8px 16px;
+    font-size: 0.8rem;
+  }
+}
 @media (max-width: 768px) {
   .hero-section {
     padding-top: 10dvh;
