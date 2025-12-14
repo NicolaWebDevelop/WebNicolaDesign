@@ -600,7 +600,7 @@
       </div>
     </div>
     <!-- Bottone back-to-top -->
-    <a href="#top" class="btn btn-light btn-lg back-to-top" role="button" aria-label="Torna su">
+    <a href="#top" class="btn btn-light btn-lg back-to-top scroll-arrow" role="button" aria-label="Torna su" id="scrollArrow">
       <svg xmlns="http://www.w3.org/2000/svg" height="20" width="17.5"
         viewBox="0 0 448 512"><!--!Font Awesome Free v5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
         <path
@@ -675,8 +675,39 @@ console.log(error);
   });
 });
 </script>
+<!-- script back to top -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const scrollArrow = document.getElementById("scrollArrow");
+  const chisono = document.getElementById("chisono");
 
+  function updateArrowVisibility() {
+    const scrollY = window.scrollY || window.pageYOffset;
+    const windowHeight = window.innerHeight;
+    const chisonoTop = chisono.getBoundingClientRect().top + scrollY;
+
+    // Mostra freccia solo dopo la sezione Chi sono
+    if (scrollY + windowHeight / 2 >= chisonoTop) {
+      scrollArrow.classList.add("show");
+    } else {
+      scrollArrow.classList.remove("show");
+    }
+  }
+
+  // Aggiorna visibilità su scroll, resize e load
+  window.addEventListener("scroll", updateArrowVisibility);
+  window.addEventListener("resize", updateArrowVisibility);
+  window.addEventListener("load", updateArrowVisibility);
+
+  // Scroll smooth al top
+  scrollArrow.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+});
+</script>
 </body>
 </html>
+
 
 
