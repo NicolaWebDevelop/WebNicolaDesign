@@ -645,25 +645,37 @@ console.log(error);
   </script>
 <!-- script loader -->
    <script>
-  const loader = document.getElementById("loader");
-  const mainContent = document.getElementById("mainContent");
-  const loaderVideo = document.getElementById("loaderVideo");
+ const loader = document.getElementById("loader");
+  const video = document.getElementById("loaderVideo");
+  const skipBtn = document.getElementById("skipIntro");
 
-  loaderVideo.addEventListener("ended", () => {
-  loader.classList.add("hidden");
+  // sicurezza: se non esiste, esci
+  if (!skipBtn || !video || !loader) {
+    console.error("Loader elements not found");
+  } else {
 
-  setTimeout(() => {
-    loader.style.display = "none";
-    
-    // Scrolla la pagina in alto
-    window.scrollTo(0, 0);
+    document.body.classList.add("loading");
 
-    mainContent.style.display = "block";
-  }, 700); // tempo del fade-out
-});
+    function endIntro() {
+      loader.classList.add("hidden");
+      setTimeout(() => {
+        loader.style.display = "none";
+        document.body.classList.remove("loading");
+        window.scrollTo(0, 0);
+      }, 600);
+    }
+
+    video.addEventListener("ended", endIntro);
+
+    skipBtn.addEventListener("click", () => {
+      video.pause();
+      endIntro();
+    });
+  }
 </script>
 </body>
 </html>
+
 
 
 
