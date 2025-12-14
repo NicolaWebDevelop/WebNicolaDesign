@@ -33,19 +33,21 @@
     (function () {
       emailjs.init("wjNhjw3fZZ_2CYTYb");
     })();
-  </script>
+  </script>  
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbarNav">
-   <!-- PROVA LOADER VIDEO ANIMAZIONE -->
-<!-- LOADER -->
+  <!-- LOADER -->
 <div id="loader">
   <video id="loaderVideo" autoplay muted playsinline preload="auto">
-    <source src="videoloader/alberovideo.mp4" type="video/mp4">
+    <source src="asset/videoloader/alberovideo.mp4" type="video/mp4">
   </video>
+
   <!-- Logo in alto a sinistra -->
   <img src="asset/img/loghi/LogoWnd.png" alt="Logo" class="loader-logo">
+
   <!-- Testo sotto l'albero -->
   <h1 class="loader-text">Buone Feste da <span>WebNicolaDesign</span></h1>
+
   <!-- Pulsante Salta Intro -->
   <button id="skipIntro" class="skip-btn">Salta intro</button>
 </div>
@@ -74,9 +76,11 @@
     </div>
   </nav>
   <main>
+   
+
     <!-- Sezione Hero -->
     <section
-      class="container-fluid hero-section d-flex flex-column flex-md-row justify-content-between">
+      class="container-fluid hero-section d-flex flex-column flex-md-row justify-content-between"s>
       <div class="text-start col-md-6">
         <p class="mb-2 text-black">HELLO, I'M</p>
         <h1 class="titolo text-variabile text-black">
@@ -463,7 +467,7 @@
           </div>
           <!-- SITI WEB -->
           <div class="col-12 col-md-4 portfolio-img">
-            <a href="Sitiweb.html">
+            <a href="SitiWeb.html">
               <img src="asset/img/SitiWeb/responsiveremovebg.png" class="img-fluid mb-2" alt="Siti Web">
               <h3 class="text-white">SITI WEB</h3>
             </a>
@@ -608,7 +612,7 @@
         <p class="footer br mb-1 mt-1">Realizzato con tanto amore ❤️ e un po’ di codice 💻 <br> © 2025 WebNicolaDesign. Tutti i diritti riservati.</p>
       </div>
       </footer>
-  </main>
+    </main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- EmailJs-->
   <script>
@@ -643,9 +647,9 @@ console.log(error);
         });
     });
   </script>
-<!-- script loader -->
+  <!-- script loader -->
    <script>
- const loader = document.getElementById("loader");
+  const loader = document.getElementById("loader");
   const video = document.getElementById("loaderVideo");
   const skipBtn = document.getElementById("skipIntro");
 
@@ -673,13 +677,6 @@ console.log(error);
     });
   }
 </script>
+
 </body>
 </html>
-
-
-
-
-
-
-
-
