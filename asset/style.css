@@ -8,6 +8,11 @@ body {
   padding: 0;
 }
 
+body.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
 /* Titoli */
 h1, h2, h3, h4 {
   font-family: "Poppins", "Roboto";
@@ -95,6 +100,40 @@ a {
   cursor: pointer;
 }
 
+/* Menu X hamburger */
+.custom-toggler {
+  border: none;
+  background: transparent;
+  width: 50px;
+  height: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.custom-toggler .bar {
+  height: 3px;
+  width: 100%;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+/* STATO APERTO */
+.custom-toggler.active .bar:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.custom-toggler.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.custom-toggler.active .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* fine menu hamburger */
+/* social */
 .sfondosocial a {
   padding: 0;
   list-style: none;
@@ -274,32 +313,7 @@ a {
   font-weight: 300;
 }
 
-.back-to-top {
-  position: fixed;
-  bottom: 12dvh;
-  right: 20px;
-  border-radius: 50%;
-  font-size: 24px;
-  padding: 12px 16px;
-  z-index: 9999;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-}
-/* Freccia scroll */
-.scroll-arrow {
-  position: fixed;
-  right: 20px;
-  padding: 8px 12px;
-  border-radius: 50%;
-  cursor: pointer;
-  z-index: 1000;
-  opacity: 0; /* invisibile inizialmente */
-  transition: opacity 0.3s ease;
-}
-.scroll-arrow.show {
-  opacity: 1;
-}
-/* Fine freccia scroll */  
-
+/* fine contatti */
 /* Base per tutti i li (social + skill) */
 .social-share li {
   display: inline-block;
@@ -427,92 +441,96 @@ a {
   opacity: 1;
 }
 
-/* Stile loader */
 /* --- LOADER FULLSCREEN --- */
 #loader {
   position: fixed;
   inset: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background: black;
-  z-index: 99999;
-  opacity: 1;
-  transition: opacity 0.7s ease;
+  background: rgb(1, 0, 24);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
 }
 
-/* Fade-out */
-#loader.hidden {
-  opacity: 0;
+.loader-video-wrapper {
+  height: 100vh;
 }
 
-/* Video responsivo */
-#loader video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  transform: translate(-50%, -50%);
+#loaderVideo {
+  width: 100%; /* o 100% se vuoi fullscreen */
+  max-width: auto;
+  height: auto;
+  margin-top: 50px; /* distanza dal top */
   -o-object-fit: cover;
      object-fit: cover;
-  pointer-events: none;
+  z-index: 1;
 }
 
-/* --- LOGO IN ALTO A SINISTRA --- */
 .loader-logo {
   position: absolute;
-  top: 25px;
-  left: 25px;
-  width: 160px;
-  height: auto;
+  top: 20px;
+  left: 20px;
+  width: 120px;
   z-index: 3;
-  animation: fadeIn 1.2s ease forwards;
 }
 
-/* --- TESTO SOTTO L'ALBERO (centrato) --- */
-.loader-text {
-  position: absolute;
-  bottom: 1%; /* qui lo avvicini / allontani dall’albero */
-  width: 100%;
-  text-align: center;
-  color: white;
-  font-size: 2rem;
-  font-weight: 600;
+/* Contenitore testo + bottone sotto il video */
+.loader-footer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   z-index: 3;
+}
+
+/* Testo */
+.loader-text {
+  color: white;
+  text-align: center;
+  margin-bottom: 15px;
   animation: fadeInUp 1.8s ease forwards;
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .loader-logo {
-    width: 120px;
-  }
-  .loader-text {
-    font-size: 1.5rem;
-    bottom: 10%;
-  }
+/* Bottone */
+.skip-btn {
+  padding: 12px 25px;
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+  font-weight: 600;
+  color: white;
+  background: #ff1f1f;
+  border: 2px solid #fff;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(255, 31, 31, 0.6);
+  transition: all 0.3s ease;
+  animation: pulse 2s infinite;
 }
-@media (max-width: 480px) {
-  .loader-logo {
-    width: 90px;
-  }
-  .loader-text {
-    font-size: 1.2rem;
-    bottom: 8%;
-  }
+
+/* Contenitore cappello */
+.santa-hat {
+  position: absolute;
+  top: -14px;
+  right: -22px;
+  width: 42px;
+  height: 30px;
+  pointer-events: none;
+  transform: rotate(15deg);
 }
+
+/* SVG responsive */
+.santa-hat svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.skip-btn:hover {
+  background: #ff4c4c;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 31, 31, 0.9), 0 0 25px rgba(255, 255, 255, 0.4);
+}
+
 /* Animazioni */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -523,47 +541,70 @@ a {
     transform: translateY(0);
   }
 }
-/* Pulsante Salta intro festivo */
-.skip-btn {
-  position: absolute;
-  bottom: 1%; /* sotto la scritta */
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 12px 25px;
-  font-size: 1rem;
-  font-weight: 600;
-  color: white;
-  background: #ff1f1f;
-  border: 2px solid #fff;
-  border-radius: 12px;
-  cursor: pointer;
-  z-index: 10000;
-  transition: all 0.3s ease;
-  box-shadow: 0 0 8px rgba(255, 31, 31, 0.6);
-  animation: pulse 2s infinite;
-  pointer-events: auto;
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
 }
-
-/* Hover glow */
-.skip-btn:hover {
-  background: #ff4c4c;
-  box-shadow: 0 0 15px rgba(255, 31, 31, 0.9), 0 0 25px rgba(255, 255, 255, 0.4);
-  transform: translateX(-50%) scale(1.05);
-}
-
-/* Responsivo */
+/* Responsive */
+/* MOBILE */
 @media (max-width: 768px) {
-  .skip-btn {
-    padding: 10px 20px;
-    font-size: 0.9rem;
+  #loaderVideo {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; /* riempie tutto lo schermo */
+  }
+  .loader-video-wrapper {
+    height: 100vh; /* vero full screen mobile */
   }
 }
+/* MOBILE PICCOLO */
 @media (max-width: 480px) {
-  .skip-btn {
-    padding: 8px 16px;
-    font-size: 0.8rem;
+  #loaderVideo {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .loader-video-wrapper {
+    height: 100vh;
   }
 }
+/* fine Loader */
+/* back to top */
+.back-to-top {
+  position: fixed;
+  bottom: 12dvh;
+  right: 20px;
+  border-radius: 50%;
+  font-size: 24px;
+  color: white;
+  padding: 12px 16px;
+  z-index: 9999;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Freccia scroll */
+.scroll-arrow {
+  position: fixed;
+  right: 20px;
+  padding: 8px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+  opacity: 0; /* invisibile inizialmente */
+  transition: opacity 0.3s ease;
+}
+
+.scroll-arrow.show {
+  opacity: 1;
+}
+
+/* Fine freccia scroll */
 @media (max-width: 768px) {
   .hero-section {
     padding-top: 10dvh;
@@ -614,9 +655,6 @@ a {
   textarea::placeholder {
     color: rgb(82, 82, 82) !important; /* colore placeholder */
     opacity: 1; /* evita che appaia troppo sbiadito */
-  }
-  #chisono, #servizi, #portfolio, #contatti {
-    scroll-margin-top: 350px;
   }
   .footer br {
     display: block !important; /* mostra i br solo su mobile */
