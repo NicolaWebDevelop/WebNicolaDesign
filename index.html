@@ -39,7 +39,7 @@
   <!-- LOADER -->
   <div id="loader">
     <video id="loaderVideo" autoplay muted playsinline preload="auto">
-      <source src="videoloader/alberovideo.mp4" type="video/mp4">
+      <source src="asset/videoloader/alberovideo.mp4" type="video/mp4">
     </video>
   
     <img src="asset/img/loghi/LogoWnd.png" alt="Logo" class="loader-logo">
@@ -76,7 +76,7 @@
       <!-- Menu -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto nav-underline text-light">
-          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#chisono">Chi sono</a></li>
           <li class="nav-item"><a class="nav-link" href="#servizi">Servizi</a></li>
           <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
@@ -90,7 +90,7 @@
 
     <!-- Sezione Hero -->
     <section
-      class="container-fluid hero-section d-flex flex-column flex-md-row justify-content-between"s>
+      class="container-fluid hero-section d-flex flex-column flex-md-row justify-content-between" id="home">
       <div class="text-start col-md-6">
         <p class="mb-2 text-black">HELLO, I'M</p>
         <h1 class="titolo text-variabile text-black">
@@ -626,22 +626,45 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Menu X hamburgher-->
   <script>
-    const toggler = document.querySelector('.custom-toggler');
-    const menu = document.querySelector('#navbarNav');
-  
-    toggler.addEventListener('click', () => {
-      toggler.classList.toggle('active');
-      menu.classList.toggle('show');
+document.addEventListener("DOMContentLoaded", () => {
+  const toggler = document.querySelector(".custom-toggler");
+  const navbarCollapse = document.getElementById("navbarNav");
+  const navLinks = document.querySelectorAll(".nav-link");
+  const logo = document.querySelector(".navbar-brand");
+
+  // Toggle menu hamburger
+  toggler.addEventListener("click", () => {
+    toggler.classList.toggle("active");
+    navbarCollapse.classList.toggle("show");
+  });
+
+  // Chiudi menu cliccando su un link
+  navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      toggler.classList.remove("active");
+      navbarCollapse.classList.remove("show");
+
+      // Aggiorna il link attivo
+      navLinks.forEach(l => l.classList.remove("active"));
+      link.classList.add("active");
     });
-  
-    // Chiudi menu cliccando su una voce
-    document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
-      link.addEventListener('click', () => {
-        toggler.classList.remove('active');
-        menu.classList.remove('show');
-      });
-    });
+  });
+
+  // Chiudi menu cliccando sul logo
+  logo.addEventListener("click", (e) => {
+    e.preventDefault(); // evita scroll automatico se vuoi
+    toggler.classList.remove("active");
+    navbarCollapse.classList.remove("show");
+    // Imposta "Home" come attivo
+    navLinks.forEach(l => l.classList.remove("active"));
+    navLinks[0].classList.add("active");
+    window.scrollTo({ top: 0, behavior: "smooth" }); // scroll in cima
+  });
+});
+
+
   </script>
+  
 <!-- fine menu -->  
 <!-- EmailJs-->
   <script>
@@ -762,4 +785,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
 </body>
 </html>
-
