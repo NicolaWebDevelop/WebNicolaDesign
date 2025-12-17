@@ -39,14 +39,14 @@
   <!-- LOADER -->
   <div id="loader">
     <video id="loaderVideo" autoplay muted playsinline preload="auto">
-      <source src="videoloader/alberovideo.mp4" type="video/mp4">
+      <source src="asset/videoloader/alberovideo.mp4" type="video/mp4">
     </video>
   
     <img src="asset/img/loghi/LogoWnd.png" alt="Logo" class="loader-logo">
   
     <!-- Contenitore per testo e bottone sotto il video -->
     <div class="loader-footer">
-      <h1 class="loader-text">Buone Feste da <span>WebNicolaDesign</span></h1>
+      <h1 class="loader-text">Buone Feste da WebNicolaDesign</h1>
       <button id="skipIntro" class="skip-btn">Salta intro
         <span class="santa-hat">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 80" aria-hidden="true">
@@ -619,11 +619,50 @@
     </a>
     <footer>
       <div class="container-fluid bg-black text-light text-center py-3">
-        <p class="footer br mb-1 mt-1">Realizzato con tanto amore ❤️ e un po’ di codice 💻 <br> © 2025 WebNicolaDesign. Tutti i diritti riservati.</p>
+        <p class="footer br mb-1 mt-1">
+          Realizzato con tanto amore ❤️ e un po’ di codice 💻 <br>
+          © 2025 WebNicolaDesign. <span id="diritti" style="cursor:pointer; text-decoration: underline;">Tutti i diritti riservati.</span>
+        </p>
       </div>
-      </footer>
+    </footer>
+    
+    <!-- Pop-up -->
+    <div id="popupDiritti" class="popup">
+      <div class="popup-content">
+        <span id="closePopup" class="popup-close">&times;</span>
+        <p>Tutti i contenuti di questo sito sono protetti da copyright e appartengono al proprietario. È vietata qualsiasi riproduzione non autorizzata.</p>
+      </div>
+    </div>
+    
+    
+    
     </main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+// Pop Up Diritti Riservati
+const popup = document.getElementById("popupDiritti");
+const btn = document.getElementById("diritti");
+const close = document.getElementById("closePopup");
+
+// Mostra pop-up al click
+btn.addEventListener("click", () => {
+  popup.style.display = "flex";
+});
+
+// Chiudi pop-up cliccando sulla X
+close.addEventListener("click", () => {
+  popup.style.display = "none";
+});
+
+// Chiudi pop-up cliccando fuori dal contenuto
+window.addEventListener("click", (e) => {
+  if (e.target === popup) {
+    popup.style.display = "none";
+  }
+});
+
+// fine Pop up diritti riservati
+  </script>
   <!-- Menu X hamburgher-->
   <script>
 document.addEventListener("DOMContentLoaded", () => {
@@ -785,4 +824,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
 </body>
 </html>
-
