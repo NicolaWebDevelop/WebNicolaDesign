@@ -457,12 +457,11 @@ a {
 }
 
 #loaderVideo {
-  width: 100%; /* o 100% se vuoi fullscreen */
+  width: 64%; /* o 100% se vuoi fullscreen */
   max-width: auto;
   height: auto;
-  margin-top: 50px; /* distanza dal top */
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
+  margin-left: 18%;
   z-index: 1;
 }
 
@@ -476,7 +475,6 @@ a {
 
 /* Contenitore testo + bottone sotto il video */
 .loader-footer {
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
