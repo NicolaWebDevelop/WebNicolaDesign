@@ -478,9 +478,8 @@ a {
 }
 
 #loaderVideo {
-  width: auto; /* default desktop */
-  height: 80vh; /* altezza fissa desktop */
-  max-width: 100%;
+  width: 100%; /* riempie larghezza schermo */
+  height: 100%; /* riempie altezza schermo */
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -493,14 +492,26 @@ a {
   z-index: 3;
 }
 
-/* Contenitore testo + bottone sotto il video */
+/* Contenitore testo + bottone sotto il video 
+VIDEO BABBO NATALE */
 .loader-footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   z-index: 3;
+  position: absolute;
+  top: 79%;
+  cursor: pointer;
 }
 
+/* Contenitore testo + bottone sotto il video 
+.loader-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 3;
+} 
+  */
 /* Testo */
 .loader-text {
   color: white;
@@ -509,6 +520,16 @@ a {
   animation: fadeInUp 1.8s ease forwards;
 }
 
+/* Testo  insieme a Babbo Natale
+.loader-text {
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+  animation: fadeInUp 1.8s ease forwards;
+  z-index: 500;
+  font-family: 'Mountains of Christmas', 'poppins', sans-serif;
+}
+  */
 /* Bottone */
 .skip-btn {
   padding: 12px 25px;
@@ -567,15 +588,31 @@ a {
     transform: scale(1.05);
   }
 }
+.text-blur {
+  padding: 10px 18px;
+  border-radius: 18px;
+  background: rgba(255, 0, 0, 0.301); /* vetro scuro */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+}
+
 /* Responsive */
 /* MOBILE */
-/* MOBILE */
 @media (max-width: 768px) {
+  .text-blur {
+    background: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    box-shadow: none !important;
+    /* forza repaint */
+    filter: none !important;
+  }
   #loaderVideo {
     width: 100% !important;
     height: 100% !important;
     -o-object-fit: cover;
-       object-fit: cover; /* riempie tutto lo schermo mobile */
+    object-fit: cover; /* riempie tutto lo schermo mobile */
   }
   .loader-video-wrapper {
     height: 100vh; /* vero full screen mobile */
@@ -584,8 +621,9 @@ a {
 /* MOBILE PICCOLO */
 @media (max-width: 480px) {
   #loaderVideo {
-    width: 100%;
+    width: auto;
     height: 100%;
+    max-width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -593,7 +631,7 @@ a {
     height: 100vh;
   }
 }
-/* fine Loader */
+/* FINE LOADER */
 /* back to top */
 .back-to-top {
   position: fixed;
@@ -683,7 +721,7 @@ a {
     font-size: clamp(10px, 3.5vw, 18px);
   }
   .titlecontattisocial {
-    font-size: 20px;
+    font-size: 19px;
     text-transform: uppercase;
     letter-spacing: 7px;
     font-weight: 300;
