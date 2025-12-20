@@ -25,6 +25,10 @@ body {
   margin: 0;
   padding: 0;
 }
+body.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
 
 /* Titoli */
 h1, h2, h3, h4 {
@@ -112,8 +116,47 @@ a {
 .nav-link {
   cursor: pointer;
 }
+.navbar-nav .nav-link.active {
+  font-weight: 600;
+  border-bottom: 2px solid white;
+}
 
-// social //
+/* Menu X hamburger */ 
+.custom-toggler {
+  border: none;
+  background: transparent;
+  width: 50px;
+  height: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.custom-toggler .bar {
+  height: 3px;
+  width: 100%;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+/* STATO APERTO */
+.custom-toggler.active .bar:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.custom-toggler.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.custom-toggler.active .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+/* fine menu hamburger */
+
+
+
+/* social */
 .sfondosocial a {
   padding: 0;
   list-style: none;
@@ -237,6 +280,7 @@ color: #ffffff66
 .card-text:last-child {
   text-align: justify;
 }
+
 //contatti //
 .form-control:focus {
   box-shadow: 0 0 0 0.25rem rgb(29, 29, 29) !important;
@@ -279,19 +323,8 @@ color: #ffffff66
   text-align: left !important;
   font-weight: 300;
 }
-// fine contatti //
-// back to top //
-.back-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  border-radius: 50%;
-  font-size: 24px;
-  padding: 12px 16px;
-  z-index: 9999;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-}
-// fine back to top // 
+/* fine contatti */
+
 /* Base per tutti i li (social + skill) */
 .social-share li {
   display: inline-block;
@@ -414,10 +447,268 @@ text-align: center;
 .portfolio-img:hover .overlay {
   opacity: 1
 }
+ /* --- LOADER FULLSCREEN --- */
+ #loader {
+  position: fixed;
+  inset: 0;
+  background: rgb(1 0 24);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+/* Loader fullscreen */
+#loader {
+  position: fixed;
+  inset: 0;
+  background: rgb(1 0 24);
+  z-index: 9999;
+  display: flex;
+  justify-content: center; /* orizzontale */
+  align-items: center;     /* verticale */
+  overflow: hidden;
+}
+
+.loader-video-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#loaderVideo {
+  width: 100%;  /* riempie larghezza schermo */
+  height: 100%; /* riempie altezza schermo */
+  object-fit: cover;
+}
+
+.loader-logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 120px;
+  z-index: 3;
+}
+
+
+/* Contenitore testo + bottone sotto il video 
+VIDEO BABBO NATALE */
+.loader-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 3;
+  position: absolute;
+  top: 79%;
+  cursor: pointer;
+}
+
+
+/* Contenitore testo + bottone sotto il video 
+.loader-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 3;
+} 
+  */
+
+
+/* Testo */
+.loader-text {
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+  animation: fadeInUp 1.8s ease forwards;
+}
+/* Testo  insieme a Babbo Natale
+.loader-text {
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+  animation: fadeInUp 1.8s ease forwards;
+  z-index: 500;
+  font-family: 'Mountains of Christmas', 'poppins', sans-serif;
+}
+  */
+
+/* Bottone */
+.skip-btn {
+  padding: 12px 25px;
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+  font-weight: 600;
+  color: white;
+  background: #ff1f1f;
+  border: 2px solid #fff;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(255,31,31,0.6);
+  transition: all 0.3s ease;
+  animation: pulse 2s infinite;
+}
+/* Contenitore cappello */
+.santa-hat {
+  position: absolute;
+  top: -14px;
+  right: -22px;
+  width: 42px;
+  height: 30px;
+  pointer-events: none;
+  transform: rotate(15deg);
+}
+
+/* SVG responsive */
+.santa-hat svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.skip-btn:hover {
+  background: #ff4c4c;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255,31,31,0.9), 0 0 25px rgba(255,255,255,0.4);
+}
+
+/* Animazioni */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%,100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+
+.text-blur {
+  padding: 10px 18px;
+  border-radius: 18px;
+  background: rgba(255, 0, 0, 0.301); /* vetro scuro */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+
+}
+/* Responsive */
+/* MOBILE */
+@media (max-width: 768px) {
+    .text-blur {
+      background: none !important;
+      backdrop-filter: none !important;
+      -webkit-backdrop-filter: none !important;
+      box-shadow: none !important;
+  
+      /* forza repaint */
+      filter: none !important;
+    }  
+  #loaderVideo {
+    width: 100% !important;
+    height: 100% !important;
+    -o-object-fit: cover;
+       object-fit: cover; /* riempie tutto lo schermo mobile */
+  }
+  .loader-video-wrapper {
+    height: 100vh;       /* vero full screen mobile */
+  }
+}
+
+/* MOBILE PICCOLO */
+@media (max-width: 480px) {
+  #loaderVideo {
+    width: auto;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  .loader-video-wrapper {
+    height: 100vh;
+  }
+}
+
+/* FINE LOADER */
+
+/* back to top */
+.back-to-top {
+  position: fixed;
+  bottom: 12dvh;
+  right: 20px;
+  border-radius: 50%;
+  font-size: 24px;
+  color: white;
+  padding: 12px 16px;
+  z-index: 9999;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+// fine back to top // 
+/* Freccia scroll */
+.scroll-arrow {
+  position: fixed;
+  right: 20px;
+  padding: 8px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+
+  opacity: 0; /* invisibile inizialmente */
+  transition: opacity 0.3s ease;
+}
+
+.scroll-arrow.show {
+  opacity: 1;
+}
+/* Fine freccia scroll */  
+
+// Pop Up diritti riservati //
+.popup {
+  display: none; /* nascosto di default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  z-index: 10000;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: #111;
+  color: #fff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 90%;
+  position: relative;
+  text-align: center;
+}
+
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 22px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.popup-close:hover {
+  color: #ff1f1f;
+}
+
+
+// fine Pop Up diritti riservati //
 
 
 
-
+// media Queries //
 @media (max-width: 768px) {
   .hero-section {
     padding-top: 10dvh;
@@ -439,7 +730,7 @@ text-align: center;
     font-size: clamp(10px, 3.5vw, 18px)
   }
   .titlecontattisocial {
-    font-size: $font-ll;
+    font-size: $font-md;
     text-transform: uppercase;
     letter-spacing: 7px;
     font-weight: 300;
@@ -470,9 +761,7 @@ textarea::placeholder {
   color: rgb(82, 82, 82) !important;   /* colore placeholder */
   opacity: 1;    /* evita che appaia troppo sbiadito */
 }
-#chisono, #servizi, #portfolio, #contatti {
-  scroll-margin-top: 350px;
-}
+
 .footer br {
   display: block !important; /* mostra i br solo su mobile */
 }
@@ -525,4 +814,3 @@ textarea::placeholder {
       display: block !important; /* mostra i br solo su mobile */
     }
   }
-
