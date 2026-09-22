@@ -39,7 +39,7 @@
   </script>  
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbarNav">
-  <!-- LOADER 
+  <!-- LOADER DISATTIVATO 
   <div id="loader">
     <video id="loaderVideo" autoplay muted playsinline preload="auto">
       <source src="videoloader/babbonatalepc.mp4" type="video/mp4">
@@ -733,34 +733,50 @@ console.log(error);
         });
     });
   </script>
-  <!-- script loader -->
-   <script>
-  document.addEventListener("DOMContentLoaded", () => {
+  <!-- INIZIO VIDEO LOADER DISATTIVATO 
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+
   const loader = document.getElementById("loader");
   const video = document.getElementById("loaderVideo");
   const skipBtn = document.getElementById("skipIntro");
 
-  if (!loader || !video || !skipBtn) return;
+  // Loader non presente? Il sito continua normalmente.
+  if (!loader || !video || !skipBtn) {
+    document.body.classList.remove("loading", "no-scroll");
+    return;
+  }
 
-  document.body.classList.add("loading");
+  document.body.classList.add("no-scroll");
 
-  function endIntro() {
+  const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+  video.src = isMobile
+    ? "asset/videoloader/babbonatalepc.mp4"
+    : "asset/videoloader/babbonatalepcdesk.mp4";
+
+  video.load();
+
+  let closed = false;
+
+  function closeLoader() {
+    if (closed) return;
+    closed = true;
+
+    video.pause();
     loader.classList.add("hidden");
+
     setTimeout(() => {
       loader.style.display = "none";
-      document.body.classList.remove("loading");
+      document.body.classList.remove("no-scroll");
       window.scrollTo(0, 0);
     }, 600);
   }
 
-  video.addEventListener("ended", endIntro);
-
-  skipBtn.addEventListener("click", () => {
-    video.pause();
-    endIntro();
-  });
+  video.addEventListener("ended", closeLoader);
+  skipBtn.addEventListener("click", closeLoader);
 });
-</script>
+  </script>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const loader = document.getElementById("loader");
@@ -789,13 +805,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const isMobile = window.matchMedia("(max-width: 768px)").matches;
   
   video.src = isMobile
-    ? "videoloader/babbonatalepc.mp4"
-    : "videoloader/babbonatalepcdesk.mp4";
+    ? "asset/videoloader/babbonatalepc.mp4"
+    : "asset/videoloader/babbonatalepcdesk.mp4";
   
   video.load();
   </script>
   
-<!-- fine script loader -->
+<!-- fine script loader DISATTIVATO -->
 <!-- script back to top -->
 <script>
 document.addEventListener("DOMContentLoaded", () => {
